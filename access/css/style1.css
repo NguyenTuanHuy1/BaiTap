@@ -3,6 +3,8 @@
     margin: 0 auto;
     background: rgb(41, 40, 40);
     color: white;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
 }
 body{
     background: rgb(41, 40, 40);
@@ -35,7 +37,8 @@ header img{
 }
 .menu{
     position: absolute;
-    right: 10%;
+    width: 40%;
+    right: 2%;
 }
 header .menu li{
     height: px;
