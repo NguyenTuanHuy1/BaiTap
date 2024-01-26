@@ -1,0 +1,116 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+    line-height: 1.6rem;
+    font-size: 1rem;
+}
+
+body{
+    background-color: #181a24;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header{
+    background-color: #181a24;
+    color: white;
+}
+
+.wrapper-header-content{
+    border-bottom: 1px solid #464d6a;
+}
+
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 50px;
+    padding: 0px 15px;
+}
+
+/* left */
+
+.header-left-elements{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo{
+    width: 62px;
+    height: 62px;
+    display: flex;
+    padding: 15px 0px;
+}
+
+.header-logo img{
+    width: 100%;
+}
+
+.header-wrapper-step{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.step{
+    position: relative;
+}
+
+.step:before {
+    content: "";
+    display: block;
+    border-bottom: 1px dashed #454D6A;
+    width: 66%;
+    position: absolute;
+    top: 50%;
+    right: 68%;
+}
+
+.step a{
+    display: block;
+    color: white;
+    width: 36px;
+    height: 36px;
+    margin: 0px 45px;
+    text-align: center;
+    line-height: 34px;
+    border: 2px solid #454D6A;
+    border-radius: 50%;
+    
+}
+
+.step.current:before{
+    border: none;
+}
+
+.step.current a{
+    border-color: #72be43;
+}
+
+.step:hover > a,
+.step:hover:before {
+    border-color: #72be43;
+}
+
+/* right */
+
+.header-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-menu .item{
+    list-style: none;
+    margin: 0px 10px;
+}
+
+.header-menu .item a{
+    color: white;
+    padding: 10px 0px;
+    font-weight: 700;
+}

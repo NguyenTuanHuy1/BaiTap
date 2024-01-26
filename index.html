@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./access/css/style.css">
+    <link rel="stylesheet" href="./access/font/fontawesome-free-6.4.0-web/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class="app" >
+        <div class="header-container" style="position: fixed; width: 100%;z-index: 1;">
+            <nav class="header-main">
+                <div class="header-main_first">
+                    <div class="logo">
+                        <img  src="./access/img/logo.png" alt="logo"style="width: 44px; height: 44px;">
+                    </div>
+                    
+                    <div class="list_main">
+                        <ul class="list_main-content">
+                            <li class="list_main-content-hover">Lịch chiếu</li>
+                            <li class="list_main-content-hover">Hệ thống rạp</li>
+                            <li class="list_main-content-hover">Khuyến mãi/Sự kiện</li>
+                            <li class="list_main-content-hover">Cửa hàng</li>
+                            <li class="list_main-content-hover">
+                                Khác
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header-main_second">
+                    <ul class="header-main_second-list" style="list-style: none;">
+                        <li >
+                            <div class="container-a container-a-hover container-a-localtion">
+                                <a href="#" class="buttons">
+                                    <span class="text">TP.Hồ Chí Minh</span>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </a>
+                                <div class="drop_localtion">
+                                        <ul class="drop_localtion-list">
+                                            <li class="drop_localtion-text">TP.Hồ Chí Minh</li>
+                                            <li class="drop_localtion-text">Hà Nội</li>
+                                            <li class="drop_localtion-text">Đồng Nai</li>
+                                            <li class="drop_localtion-text">TP.Huế</li>
+                                        </ul>
+                                    </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="container-a container-a-hover container-a-login">
+                                <a href="web.html" class="buttons">
+                                    <span class="text" >Đăng nhập/Đăng ký</span>
+                                </a>
+                                <div class="drop_login">
+                                    <div class="drop_login-container drop_login-input">
+                                        <div class="login-email">
+                                            <span class="login-text login-email-text">Email*</span>
+                                            <div class="login-email-input">
+                                                <input type="email" class="auth-form__input" placeholder="Tài khoản hoặc địa chỉ email" >
+                                            </div>
+                                        </div>
+                                        <div class="login-password">
+                                            <span class="login-text login-password-text">Mật khẩu*</span>
+                                            <div class="login-password-input">
+                                                <input type="password" class="auth-form__input" placeholder="Mật khẩu" />
+                                            </div>
+                                        </div>
+                                        <a href="#" class="login-link">Quên mật khẩu</a>
+                                    </div>
+                                    <div class="drop_login-container drop_login-btn">
+                                        <div class="btn-first">
+                                            <button type="button" class="auth-form_switch-btn btn_sign-in">Đăng nhập</button>
+                                        </div>
+                                        <div class="btn-second">
+                                            <button type="button" class="auth-form_switch-btn btn_sign-up">Đăng ký thành viên mới</button>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="container-a container-a-book">
+                                <a href="bookTicket.html" class="buttons">
+                                    <i class="fa-solid fa-ticket" style="font-size: 20px; margin-right: 6px;"></i>
+                                Mua vé
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                    
+                </div>
+    
+            </nav>
+        </div>
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./access/img/img1.jpg" class="d-block w-100" alt="...">
+                 </div>
+                <div class="carousel-item"> 
+                    <img src="./access/img/img2.jpg" class="d-block w-100" alt="...">
+                </div>
+                 <div class="carousel-item">
+                    <img src="./access/img/img3.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./access/img/img5.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+       
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

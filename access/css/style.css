@@ -1,0 +1,241 @@
+*{
+    box-sizing: inherit;
+}
+html{
+    /* 10px */
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.header-main{
+    display: flex;
+    justify-content: space-evenly;
+    /* background-color:#0d0e14 ; */
+    background-color:rgba(0,0,0,0.8);
+    padding: 10px;
+    
+}
+.header-main_first{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+     margin-right: 10px;
+    
+}
+
+.list_main-content{
+    display: flex;
+    list-style: none;
+    font-size: 14px;
+    font-weight: 800;
+    color:rgb(199 199 199);
+    gap: 12px;
+    margin-bottom: 0px;
+    
+}
+.header-main_second{
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    
+}
+.header-main_second-list {
+    display:flex;
+    
+}
+.buttons{
+    color:#fff;
+    text-decoration: none;
+    padding: 10px;
+}
+.container-a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    width: 174px;
+    height: 40px;
+    margin-left: 15px;
+    transition: fadeIn ease-in-out 0.9s;
+}
+.container-a-login{
+    border: 1px solid #90c63f;
+    position: relative;
+}
+
+.drop_login{
+    display: none;
+    position: absolute;
+    width: 300px;
+    right: 0px;
+    top: 142%;
+    overflow: hidden;
+    border-radius: 5px;
+    background-color:#1a1d29;
+    transform-origin:calc(100% - 20px) top;
+    animation:headerNotifyGrowth ease-in 0.2s;
+    will-change: opacity,transform;
+}
+
+
+
+.container-a-login::after{
+    content: "";
+    display: block;
+    width: 175px;
+    height: 30px;
+    position: absolute;
+    right: 0px;
+    bottom:-14px;
+}
+.container-a-login:hover  .drop_login{
+    display: block;
+}
+.drop_login-container{
+    padding: 0 22px;
+}
+.login-email{
+    margin: 10px 0px;
+}
+.auth-form__input{
+    height: 30px;
+    margin-top: 10px;
+    width: 100%;
+    padding: 0 10px;
+    font-size: 1.4rem;
+    border: 1px solid #fff;
+    border-radius:2px ;
+    outline: none;
+}
+
+.login-text{
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+}
+.login-password-input{
+    margin-bottom: 10px;
+}
+.login-link{
+   float:right;
+   color: #72BE43 ;
+   font-size: 12px;
+}
+.drop_login-btn{
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.auth-form_switch-btn{
+    font-size: 1.3rem;
+    font-weight: 500;
+    cursor: pointer;
+    width: 100%;
+    height: 30px;
+    color: #fff;
+    border-radius: 5px;
+    
+}
+.btn_sign-in{
+    background-color: #72BE43;
+}
+.btn_sign-up{
+    background-color: transparent;
+    margin-top: 10px;
+    border: 1px solid #72BE43;
+}
+.container-a-localtion{
+    position: relative;
+    border: 1px solid #757373;
+}
+
+.drop_localtion{
+    display: none; 
+    position: absolute;
+    top: 134%;
+    width: 250px;
+    font-weight: 500;
+    height: 132px;
+    border: 1.2px solid #fff;
+    background-color:rgba(0,0,0,0.2);
+    /* background-color: #1a1d29; */
+    right: 0px;
+    border-radius: 5px;
+    transform-origin:calc(100% - 20px) top;
+    animation:headerNotifyGrowth ease-in 0.2s;
+    will-change: opacity,transform;
+    
+}
+
+.drop_localtion::after{
+    content: "";
+    display: block;
+    width: 175px;
+    height: 30px;
+    position: absolute;
+    right: 0px;
+    top:-14px;
+    
+}
+.drop_localtion-list{
+    list-style: none;
+    padding-left: 0px;
+    margin-left: 16px;
+    margin-right: 16px;
+
+}
+.drop_localtion-text{
+    left: 0px;
+    width: 100%;
+    font-size: 17px;
+    padding: 3px ;
+    color: #fff;
+    
+    
+}
+@keyframes headerNotifyGrowth {
+    from{
+        opacity: 0;
+        transform: scale(0);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+    
+}
+
+.drop_localtion-text:hover{
+    color: #72BE43 ;
+    cursor: pointer;
+    
+}
+.container-a-localtion:hover .drop_localtion{
+    display: block;
+}
+.container-a-book{
+    background-color: #72BE43;
+}
+
+.container-a-book:hover{
+    background-color: #50a827;
+}
+
+.list_main-content-hover:hover{
+    color: #72BE43;
+    cursor: pointer;
+    transition: fadeIn ease-in-out 0.9s;
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
