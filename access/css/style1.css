@@ -1,15 +1,12 @@
 *{
     padding: 0;
     margin: 0 auto;
-    background: rgb(41, 40, 40);
+    
     color: white;
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
-body{
-    background: rgb(41, 40, 40);
-    
-}
+
 h1{
     font-size: x-large;
     font-weight: 600;
@@ -20,6 +17,7 @@ h1{
     clear:both
 }
 header{
+    background-color: black;
     height: 100px;
     width: 100%;
     display: flex;
@@ -63,8 +61,12 @@ header select{
 header select:hover{
     display: block;
 }
-header .menu li>input[type=submit]{
+input{
     background-color: rgb(51, 50, 50);
+}   
+
+header .menu li>input[type=submit]{
+    
     padding: 15px;
     border: 2px solid green;
     border-radius: 2px 2px 2px 2px;
@@ -116,11 +118,23 @@ input[type=submit]{
 input[type=submit]:hover{
     background-color: rgb(2, 100, 2);
 }
+.signin input[type=submit]{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: yellowgreen;
+    padding: 20px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    border: 1px solid greenyellow;
+}
+.signin input[type=submit]:hover{
+    background-color: rgb(2, 100, 2);
+}
 .signin{
     position: absolute;
     left: 100px;
     height: 700px;
-    width: 100%;
+    width: 93%;
     padding: 20px;
 }
 .signin .o{
@@ -130,6 +144,7 @@ input[type=submit]:hover{
     margin: 20px;
 }
 .signin input{
+    background: rgb(41, 40, 40);
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -142,6 +157,7 @@ input[type=submit]:hover{
     width: 10%;
     margin: 10px;
 }
+
 .signin .i{
     width: 68.5%;
     float: left;
@@ -262,23 +278,65 @@ input[type=submit]:hover{
         opacity: 0;
     }
 }
+.info{
+    color: #fff;
+    background-color: #090b13;
+    display:flex;
+    justify-content: space-between;
+    padding: 60px 28px;
+}
+.system{
 
-footer{
-    height: 200px;
-    width: 100%;
-    background-color: black;
 }
-section{
-    background-color: black;
-    padding: 20px;
+.info-title h2{
+    font-size: 20px;
+    font-weight: 700;
 }
-
-footer section img{
-    float: left;
-    height: 99px;
-    width: 100px;
-    margin-right: 20px;
+.list-info-item:hover{
+    color: #72BE43;
+    cursor: pointer;
 }
-footer section p{
-    background-color: black;
+.list-info{
+    padding-left: 0px;
+}
+.list-info-item{
+    list-style: none;
+    font-size: 16px;
+    padding: 6px 0px;
+    font-weight: 500;
+}
+.logo-system{
+    width: 198px;
+    height: 74px;
+}
+.logo-mxh{
+    gap: 6px;
+}
+.logo-mxh i{
+   padding: 10px;
+    font-size: 38px;
+}
+.contact{
+    display: flex;
+}
+.contact i{
+    color: #fff;
+}
+.footer{
+    background-color: #151720;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 30px 4px;
+}
+.footer-logo {
+    padding: 40px;
+}
+.footer-logo-img{
+    width: 74px;
+    height: 74px;
+}
+.footer-text{
+    font-size: 14px;
+    font-weight: 500;
 }

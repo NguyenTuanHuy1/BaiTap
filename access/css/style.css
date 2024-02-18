@@ -239,3 +239,214 @@ html{
         opacity: 1;
     }
 }
+
+/* container */
+.topic{
+    
+    padding: 16px 5px;
+    font-size: 26px;
+    color: #fff;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.describe{
+    color: #fff;
+    gap: 50px;
+     
+}
+.describe-one{
+    width: 29px;
+    height: 22px;
+    background-color: #da1f1f;
+    border-radius: 2px;
+    padding: 2px 4px;
+    font-weight: 600;
+}
+.describe-two{
+    width: 48px;
+    height: 22px;
+    border: 1px solid #ffd600;
+    padding: 2px 8px;
+    border-radius: 2px;
+    font-weight: 600;
+   
+}
+.describe-three{
+    background-color: #08b817;
+    width: 29px;
+    height: 22px;
+    padding: 2px 4px;
+    border-radius: 2px;
+    
+}
+.title{
+    color: #fff;
+    padding: 20px 0px;
+}
+.title-name{
+    font-weight: 700;
+}
+.title-category{
+    font-size: 12px;
+    color: #ccc;
+}
+.title-category-name{
+    font-size: 12px;
+}
+.button{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.button-buy{
+    display: flex;
+    align-items: center;
+    width: 144px;
+    height: 40px;
+    background-color: #72BE43;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 4px;
+}
+.button-icon{
+    height: 40px;
+    width: 40px;
+    border: 1px solid #67c92a;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.button-icon i{
+    font-size: 16px;
+}
+.button-icon:hover{
+    cursor: pointer;
+    background-color: #72BE43;
+}
+
+.bhdMember-title{
+    width: 308px;
+    height: 52px;
+    margin: 0px auto;
+    padding-top: 20px;
+    
+}
+.bgdMember-item{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 60px;
+}
+.bhdMember-item-cart{
+    width: 312px;
+    height: 184px;
+}
+.bgdMember-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+}
+.bgdMember-button-login{
+    width: 146px;
+    height: 38px;
+    outline: none;
+    background-color: transparent;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    border: 1px solid #72BE43;
+    border-radius: 4px;
+    
+}
+.bgdMember-button-login:hover{
+    background-color: #72BE43;
+}
+
+.image-sale{
+    height: 200px; 
+    width: 364px;
+    padding-bottom: 10px;
+}
+.title-sale{
+    color: #fff;
+   
+}
+
+.title-sale-name h3{
+    color: #b2ec0f;
+    font-weight: 700;
+    margin-top: 20px;
+}
+.title-sale-date{
+    font-size: 12px;
+    padding-bottom: 20px;
+}
+
+.info{
+    color: #fff;
+    background-color: #090b13;
+    display:flex;
+    justify-content: space-between;
+    padding: 60px 28px;
+}
+.system{
+
+}
+.info-title h2{
+    font-size: 20px;
+    font-weight: 700;
+}
+.list-info-item:hover{
+    color: #72BE43;
+    cursor: pointer;
+}
+.list-info{
+    padding-left: 0px;
+}
+.list-info-item{
+    list-style: none;
+    font-size: 16px;
+    padding: 6px 0px;
+    font-weight: 500;
+}
+.logo-system{
+    width: 198px;
+    height: 74px;
+}
+.logo-mxh{
+    gap: 6px;
+}
+.logo-mxh i{
+   padding: 10px;
+    font-size: 38px;
+}
+.contact{
+    display: flex;
+}
+.contact i{
+    color: #fff;
+}
+.footer{
+    background-color: #151720;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 30px 4px;
+}
+.footer-logo {
+    padding: 40px;
+}
+.footer-logo-img{
+    width: 74px;
+    height: 74px;
+}
+.footer-text{
+    font-size: 14px;
+    font-weight: 500;
+}
+

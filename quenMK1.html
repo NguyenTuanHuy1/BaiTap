@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    
+
 </head>
 <body>
     <header>
@@ -29,80 +29,22 @@
             <li><input type="submit" value="Đăng nhập/ Đăng ký"></li>
         </ul>
     </header>
-    <main style="height: 1200px;">
+    <main>
         <div class="signin">
-            <h1>Đăng ký tài khoản</h1>
-            <form action="">
-                <div class="o">
-                    <label for="txtH">Họ*</label>
-                    <input type="text" id="txtH" required>
-                </div>
-                <div class="o">
-                    <label for="txtT">Tên đệm và tên*</label>
-                <input type="text" id="txtT" required>
-                </div>
-                <div class="o">
-                    <label for="gt">Giới tính*</label><br>
-                    <input type="radio" id="nam" name="gt" value="Nam">
-                    <label for="nam">Nam</label>
-                    <input type="radio" id="nu" name="gt" value="Nu">
-                    <label for="nu">Nữ</label>
-                    <input type="radio" id="khac" name="gt" value="khac">
-                    <label for="khac">Khác</label>
-                </div>
-                <div class="o">
-                    <label for="txtE">Địa chỉ email*</label>
-                    <input type="email" id="txtE" required>
-                </div>
-                <div class="o">
-                    <label for="txtM">Mật khẩu*</label>
-                    <input type="password" id="txtM" required>
-                </div>
-                <div class="o">
-                    <label for="txtM2">Nhập lại mật khẩu*</label>
-                    <input type="password" id="txtM2" required>
+            <h1>Cập nhật mật khẩu</h1>
+            <form action="./dangnhap.html">
+                <div class="i">
+                    <input type="password" name="pass1" id="pass1" placeholder="Mật khẩu mới" >
                 </div>
                 <div class="i">
-                    <label for="txtS">Số Điện thoại*</label>
-                    <input type="tel" id="txtS" required>
+                    <input type="password" name="pass2" id="pass2" placeholder="Nhập lại mật khẩu mới" >
                 </div>
-                <div class="i">
-                    <label for="">Ngày sinh*</label><br>
-                    <br>  
-                    <select name="" id="">
-                            <option value="">Chọn ngày</option>
-                    </select>
-                    <select name="" id="">
-                            <option value="">Chọn Tháng</option>
-                    </select>
-                    <select name="" id="">
-                        <option value="">Chọn Năm</option>
-                    </select>
+                <div class="i" >
+                    <input type="submit" value="CẬP NHẬT">
                 </div>
-                <div class="i">
-                    <label for="txtC">Tỉnh/Thành phố *
-                        
-                    </label><br>
-                    <select style="width: 100%;" name="" id="txtC">
-                            <option value="">Chọn Tỉnh/Thành Phố</option>
-                    </select>
-                </div>
-                <div class="i">
-                    <label for="check1" class="container">
-                        <input type="checkbox" id="check1" required> 
-                        <span class="checkmark" id="check"></span>
-                        <label for="">tôi đã đọc, hiểu và đồng ý với các <a href="" style="color: yellowgreen;">điều khoản</a></label>
-                    </label>
-                    <label for="check2" class="container">
-                        <input type="checkbox" id="check2" required> 
-                        <span class="checkmark" id="check2"></span>
-                        <label for="check">Nhận thông tin khiến mãi</a></label>
-                    </label>
-                </div>
-                <div class="i">
-                    <input type="submit" value="Đăng ký" style="height: 75px;">
-                </div>
+                
             </form>
+            
         </div>
     </main>
     <div class="info">
@@ -191,6 +133,5 @@
             </p>
         </div>
     </footer>
-    
 </body>
 </html>
