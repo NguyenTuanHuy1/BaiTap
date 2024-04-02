@@ -1,58 +1,90 @@
-$(document).ready(function(){
-    $('.image-slider').slick({
-      slidesToShow: 5,
-    slidesToScroll: 1,
-    infinite:true,
-    arrows:true,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    prevArrow: `<button type='button' class='slick-prev slick-arrow'><i class="fa-solid fa-chevron-left"></i></i></button>`,
-    nextArrow: `<button type='button' class='slick-next slick-arrow'><i class="fa-solid fa-chevron-right"></i></ion-icon></button>`,
-    dots:true,
-    responsive: [
-        {
-          breakpoint: 1025,
-          settings: {
-            slidesToShow: 3,
-          },
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-            arrows: false,
-            infinite: false,
-          },
-        },
-      ],
-    });
-  });
   
-  $(document).ready(function(){
-    $('.image-slider-sale').slick({
-      slidesToShow: 3,
-    slidesToScroll: 1,
-    infinite:true,
-    arrows:true,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    prevArrow: `<button type='button' class='slick-prev slick-arrow'><i class="fa-solid fa-chevron-left"></i></i></button>`,
-    nextArrow: `<button type='button' class='slick-next slick-arrow'><i class="fa-solid fa-chevron-right"></i></ion-icon></button>`,
-    responsive: [
-        {
-          breakpoint: 1025,
-          settings: {
-            slidesToShow: 3,
-          },
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-            arrows: false,
-            infinite: false,
-          },
-        },
-      ],
-    });
-  });
+$('.sale').slick({
+  dots: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay:true,
+  autoplaySpeed: 2000,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1
+        
+      }
+    },
+    {
+      breakpoint: 830,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+        
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+$('.reponsive').slick({
+  dots: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 5,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 1
+        
+      }
+    },
+    {
+      breakpoint: 1095,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1
+        
+      }
+    },
+    {
+      breakpoint: 800,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+
+        
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      }
+    }
+    
+  ]
+});
+$('.slider').slick({
+   slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+});
+

@@ -8,19 +8,21 @@
 
 body{
     background-color: #181a24;
+    color: white;
 }
 
 a{
     text-decoration: none;
 }
 
-.header{
+#header{
     background-color: #181a24;
     color: white;
 }
 
 .wrapper-header-content{
     border-bottom: 1px solid #464d6a;
+    padding: 15px 0px;
 }
 
 .header-content{
@@ -43,7 +45,7 @@ a{
     width: 62px;
     height: 62px;
     display: flex;
-    padding: 15px 0px;
+    padding: 4px 0px;
 }
 
 .header-logo img{
@@ -114,3 +116,315 @@ a{
     padding: 10px 0px;
     font-weight: 700;
 }
+
+.header-menu .item a:hover{
+    color: #72be43;
+}
+
+
+/* container */
+.containerTiltle{
+    margin: 0;
+    text-align: center;
+    font-size: 1.6rem;
+    height: 114px;
+    line-height: 2.6rem;
+    padding: 30px 0px;
+}
+/* step 1 */
+/* contentRight */
+.contentLeft,
+.contentRight{
+    padding: 20px;
+    border: 1px solid #454D6A;
+    border-radius: 15px;
+}
+
+/* calendar */
+.wrapper{
+    border: 1px solid #464d6a;
+    border-radius: 10px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+}
+.wrapper header{
+  display: flex;
+  align-items: center;
+  padding: 25px 30px 10px;
+  justify-content: space-between;
+}
+header .icons{
+  display: flex;
+}
+header .icons span{
+  height: 38px;
+  width: 38px;
+  margin: 0 1px;
+  cursor: pointer;
+  color: #878787;
+  text-align: center;
+  line-height: 38px;
+  font-size: 1.9rem;
+  user-select: none;
+  border-radius: 50%;
+}
+.icons span:last-child{
+  margin-right: -10px;
+}
+header .icons span:hover{
+  background: #f2f2f2;
+}
+header .current-date{
+  font-size: 1.45rem;
+  font-weight: 500;
+}
+.calendar{
+  padding: 20px;
+}
+.calendar ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.calendar .days{
+  margin-bottom: 20px;
+}
+.calendar li{
+  color: #333;
+  width: calc(100% / 7);
+  font-size: 1.07rem;
+}
+.calendar .weeks li{
+    color: white;
+    font-weight: 500;
+    cursor: default;
+}
+.calendar .days li{
+  z-index: 1;
+  cursor: pointer;
+  position: relative;
+  margin-top: 30px;
+}
+.days li.inactive{
+  color: #aaa;
+}
+.days li.active{
+  color: #fff;
+}
+.days li::before{
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 50%;
+  height: 40px;
+  width: 40px;
+  z-index: -1;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+.days li.active::before{
+  background: #9B59B6;
+}
+.days li:not(.active):hover::before{
+  background: #f2f2f2;
+}
+
+/* listTime */
+.listTimeAddress{
+    margin: 0;
+    padding: 0;
+}
+
+.itemTime{
+    list-style: none;
+    border: 1px solid #454D6A;
+    border-radius: 15px;
+    padding: 20px;
+}
+.itemTime + .itemTime{
+    margin-top: 20px;
+}
+
+.titleItemTime{
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+
+.iconItemTime{
+    margin-right: 10px;
+}
+
+.addressItemTime{
+    font-size: 1.0rem;
+    margin: 12px 0px 20px 0px;
+    font-weight: 100;
+}
+
+.col.sessionTime,
+.container.sessionTime{
+    padding: 0;
+}
+.p-3.sessionTime{
+    padding: 0 !important;
+}
+.sessionFilm{
+    margin-bottom: 8px;
+}
+.sessionFilm a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+}
+.time.textCenter{
+    cursor: pointer;
+    margin-bottom: 5px;
+    padding: 14px 10px;
+    background-color: #454D6A;
+    border-radius: 3px;
+    text-align: center;
+    font-weight: 200;
+    width: 178px;
+}
+.time.textCenter:hover{
+    background-color: #72be43;
+}
+.meta.textCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.meta .type,
+.meta.textCenter .type{
+    font-size: 0.7rem;
+    font-weight: 100;
+    padding: 0px 4px;
+    border: 1px solid #FFD600;
+    border-radius: 3px;
+    margin-right: 10px;
+    text-transform: uppercase;
+}
+
+.meta .format,
+.meta.textCenter .format{
+    border-radius: 4px;
+    text-align: center;
+    padding: 0px 7px;
+    background-color: #72be43;
+    font-size: 0.6rem;
+}
+.meta .format{
+    padding: 4px 7px;
+}
+
+/* step 2 */
+/* content Left */
+.addressFilmCart{
+
+    padding-bottom: 20px;
+    border-bottom: 1px solid #454D6A;
+}
+.addressFilmCartTitle{
+    font-size: 1.4rem;
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+.addressFilmCart .screen{
+    color: #72be43;
+}
+.nameFilmCartTilte{
+    color: #72be43;
+    margin: 10px 0px;
+}
+.age-limit{
+    font-size: 0.7rem;
+    padding: 2px;
+    background-color: red;
+    border-radius: 4px;
+    margin-right: 8px;
+}
+.cart-items{
+    width: 100%;
+    margin-top: 18px;
+    margin-bottom: 20px;
+}
+
+.cart-items .price,
+.cart-items .title{
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+.cart-items .price{
+    text-align: end;
+}
+
+.sumMoney{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 0px;
+    border-top: 1px solid #464d6a;
+}
+
+.sumMoney .text{
+    font-size: 1.6rem;
+    font-weight: 100;
+}
+
+.sumMoney .number{
+    font-size: 1.4rem;
+    font-weight: 100;
+}
+
+.chonDoAnBtn{
+    margin-bottom: 15px;
+    width: 100%;
+    text-align: center;
+    background-color: #72be43;
+    color: white;
+    padding: 10px 0px;
+    border-radius: 6px;
+    font-size: 1.2rem;
+}
+
+.timelife,
+.backPage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.backPage a{
+    color: white;
+}
+
+.cinemaMapContent table{
+    width: 100%;
+}
+
+.mapHeader img{
+    width: 100%;
+    height: 100%;
+}
+
+.seatTypes{
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+
+.seatItem img{
+    width: 36px;
+    height: 25px;
+}
+
+.seatItem span{
+    margin-left: 5px;
+}
+

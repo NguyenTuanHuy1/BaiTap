@@ -5,118 +5,139 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./access/css/style.css">
     <link rel="stylesheet" href="./access/font/fontawesome-free-6.4.0-web/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
     <link rel="stylesheet" href="./access/css/reset.css">
-    <link
-        rel="stylesheet"
-        type="text/css"
-        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-      />
+     
     <link rel="stylesheet" href="./access/css/app.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="./access/link/css2.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="./access/link/bootstrap.min.css">
+     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+     <link rel="stylesheet" href="./access/link/slick-theme.min.css">
+      <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+      <link rel="stylesheet" href="./access/link/slick.min.css">
+      <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css" integrity="sha512-d0olNN35C6VLiulAobxYHZiXJmq+vl+BGIgAxQtD5+kqudro/xNMvv2yIHAciGHpExsIbKX3iLg+0B6d0k4+ZA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+      <link rel="stylesheet" href="./access/link/fontawesome.min.css">
     <title>Document</title>
 </head>
-<body  data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="10">
-    <div class="app" >
-        <div class="header-container" style="position: fixed; width: 100%;z-index: 999;">
-            <nav class="header-main">
-                <div class="header-main_first">
-                    <div class="logo">
-                        <img  src="./access/img/logo.png" alt="logo"style="width: 44px; height: 44px;">
-                    </div>
-                    
-                    <div class="list_main">
-                        <ul class="list_main-content">
-                            <li class="list_main-content-hover">Lịch chiếu</li>
-                            <li class="list_main-content-hover">Hệ thống rạp</li>
-                            <li class="list_main-content-hover">Khuyến mãi/Sự kiện</li>
-                            <li class="list_main-content-hover">Cửa hàng</li>
-                            <li class="list_main-content-hover">
-                                Khác
-                                <i class="fa-solid fa-chevron-down"></i>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="header-main_second">
-                    <ul class="header-main_second-list" style="list-style: none;">
-                        <li >
-                            <div class="container-a container-a-hover container-a-localtion">
-                                <a href="#" class="buttons">
-                                    <span class="text">TP.Hồ Chí Minh</span>
-                                    <i class="fa-solid fa-chevron-down"></i>
-                                </a>
-                                <div class="drop_localtion">
-                                        <ul class="drop_localtion-list">
-                                            <li class="drop_localtion-text">TP.Hồ Chí Minh</li>
-                                            <li class="drop_localtion-text">Hà Nội</li>
-                                            <li class="drop_localtion-text">Đồng Nai</li>
-                                            <li class="drop_localtion-text">TP.Huế</li>
-                                        </ul>
-                                    </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="container-a container-a-hover container-a-login">
-                                <a href="web.html" class="buttons">
-                                    <span class="text" >Đăng nhập/Đăng ký</span>
-                                </a>
-                                <div class="drop_login">
-                                    <div class="drop_login-container drop_login-input">
-                                        <div class="login-email">
-                                            <span class="login-text login-email-text">Email*</span>
-                                            <div class="login-email-input">
-                                                <input type="email" class="auth-form__input" placeholder="Tài khoản hoặc địa chỉ email" >
+<body >
+    <div class="container-fluid" style="padding: 0px;">
+        <header>
+            <div class="container-fluid header-container" style="position: fixed; width: 100%;z-index: 999; padding: 0px;">
+                <nav class="navbar navbar-expand-lg header-main ">
+                    <div class="container-fluid">
+                        <a class="navbar-brand">
+                            <img  src="./access/img/logo.png" alt="logo"style="width: 50px; height: 50px;">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" style="border: 1px solid #fff;" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon bg-light" style="padding: 5px;"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class=" list_main-content navbar-nav me-auto">
+                                <li class=" list_main-content-hover nav-item">
+                                    <a href="#list-card">
+                                        Lịch chiếu
+                                    </a>
+                                </li>
+                                <li class="col list_main-content-hover nav-item">
+                                    <a href="">
+                                        Hệ thống rạp
+                                    </a>
+                                </li>
+                                <li class="list_main-content-hover">
+                                    <a href="./sale_event.html">
+                                        Khuyến mãi/Sự kiện
+                                    </a>
+                                </li>
+                                <li class="list_main-content-hover">
+                                    <a href="">
+                                        Cửa hàng
+                                    </a>
+                                </li>
+                                <li class="list_main-content-hover ">
+                                    <a href="">
+                                        Khac
+                                    </a>
+                                    <ul class="submenu" style="display: none;">
+                                        <li class="dropdown"><a href="">Dịch vụ quảng báo</a></li>
+                                        <li class="dropdown"><a href="">Tuyền dụng</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="header-main_second">
+                                <ul class="header-main_second-list" style="list-style: none;">
+                                    <li >
+                                        <div class="container-a container-a-hover container-a-localtion"  >
+                                            <select name="" id="" class="form-select" style="height: 100%; background-color: transparent; color: #fff;font-size: 16px;border: 1px solid #72BE43;">
+                                                <option  value="">TP. HỒ CHÍ MINH</option>
+                                                <option value="">HÀ NỘI</option>
+                                                <option value="">HUẾ</option>
+                                                <option value="">ĐỒNG NAI</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="container-a container-a-hover container-a-login">
+                                            <a href="./dangnhap.html" class="buttons">
+                                                <span class="text" >Đăng nhập/Đăng ký</span>
+                                            </a>
+                                            <div class="drop_login">
+                                                <div class="drop_login-container drop_login-input">
+                                                    <div class="login-email">
+                                                        <span class="login-text login-email-text">Email*</span>
+                                                        <div class="login-email-input">
+                                                            <input type="email" class="auth-form__input" placeholder="Tài khoản hoặc địa chỉ email" >
+                                                        </div>
+                                                    </div>
+                                                    <div class="login-password">
+                                                        <span class="login-text login-password-text">Mật khẩu*</span>
+                                                        <div class="login-password-input">
+                                                            <input type="password" class="auth-form__input" placeholder="Mật khẩu" />
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="login-link">Quên mật khẩu</a>
+                                                </div>
+                                                <div class="drop_login-container drop_login-btn">
+                                                    <div class="btn-first">
+                                                        <button type="button" class="auth-form_switch-btn btn_sign-in">Đăng nhập</button>
+                                                    </div>
+                                                    <div class="btn-second">
+                                                        <button type="button" class="auth-form_switch-btn btn_sign-up">Đăng ký thành viên mới</button>
+                                                    </div>
+                                                </div> 
                                             </div>
                                         </div>
-                                        <div class="login-password">
-                                            <span class="login-text login-password-text">Mật khẩu*</span>
-                                            <div class="login-password-input">
-                                                <input type="password" class="auth-form__input" placeholder="Mật khẩu" />
-                                            </div>
+                                    </li>
+                                    <li>
+                                        <div class="container-a container-a-book">
+                                            <a href="./bookTicketStep1.html" class="buttons">
+                                                <i class="fa-solid fa-ticket" style="font-size: 20px; margin-right: 6px;"></i>
+                                            Mua vé
+                                            </a>
                                         </div>
-                                        <a href="#" class="login-link">Quên mật khẩu</a>
-                                    </div>
-                                    <div class="drop_login-container drop_login-btn">
-                                        <div class="btn-first">
-                                            <button type="button" class="auth-form_switch-btn btn_sign-in">Đăng nhập</button>
-                                        </div>
-                                        <div class="btn-second">
-                                            <button type="button" class="auth-form_switch-btn btn_sign-up">Đăng ký thành viên mới</button>
-                                        </div>
-                                    </div> 
-                                </div>
+                                    </li>
+                                </ul>                            
                             </div>
-                        </li>
-                        <li>
-                            <div class="container-a container-a-book">
-                                <a href="bookTicket.html" class="buttons">
-                                    <i class="fa-solid fa-ticket" style="font-size: 20px; margin-right: 6px;"></i>
-                                Mua vé
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
-                    
-                </div>
-    
-            </nav>
-        </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
         <div id="carouselExample" class="carousel slide">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="./access/img/img1.jpg" class="d-block w-100" alt="...">
-                 </div>
-                <div class="carousel-item"> 
-                    <img src="./access/img/img2.jpg" class="d-block w-100" alt="...">
-                </div>
-                 <div class="carousel-item">
-                    <img src="./access/img/img3.jpg" class="d-block w-100" alt="...">
+                    <img src="./access/img/big1.jpg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="./access/img/img8.jpg" class="d-block w-100" alt="...">
+                    <img src="./access/img/big2.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./access/img/big3.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./access/img/demonbig.jpg" class="d-block w-100" alt="...">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -124,18 +145,88 @@
                 <span class="visually-hidden">Previous</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
-        </div>
-        <div class="container" style="min-width: 1256px;  background-color: #1a1d29; margin: 0px; padding: 0px;">
-            <div class="container-slider" style=""> 
-                <h2 class="topic">Phim đang chiếu</h2>
-                <div class="image-slider">
-                    <div class="image-item">
+            </div>
+        <div class="container-fluid " id="list-card" style="  background-color: #1a1d29; margin: 0px; padding: 0px;">
+            <div class="container">
+                <div class="row">
+                    <h2 class="topic" >Phim đang chiếu</h2>
+                </div>
+                <div class="row reponsive">
+                    <div class="container-card col-sm-6 col-md-4 col-lg-3">
+                        <div class="card image-item" style=" background-color: #1a1d29;">
+                            
+                            <div class="image">
+                                <a href="../movie_details.html" class="image-link">
+                                    <img src="./access/img/kunfu.jpg" alt="img">
+                                </a>
+                            </div>
+                            <div class="content">
+                                <div class="describe">
+                                    <span class="describe-one">P</span>
+                                    <span class="describe-two">Phụ đề/Lồng tiếng</span>
+                                    <span class="describe-three">2D</span>
+                                </div>
+                                <div class="title">
+                                    <h2 class="title-name">KUNG FU PANDA 4</h2>
+                                    <span class="title-category">Thể loại phim:</span>
+                                    <span class="title-category-name">Animation</span>
+                                </div>
+                                <div class="button">
+                                    <div class="button-buy">
+                                        <a href="" class="buttons">
+                                            <i class="fa-solid fa-ticket" style="font-size: 20px; margin-right: 6px;"></i>
+                                            Mua vé ngay
+                                        </a>                                   
+                                    </div>
+                                    <div class="button-icon">
+                                        <i class="fa-solid fa-circle-info" style="color: #fff;"></i>
+                                    </div>
+                                </div>
+                        
+                            </div>
+                    </div>
+                    </div>
+                    <div class="container-card col-sm-6 col-md-4 col-lg-3">
+                        <div class="card image-item" style=" background-color: #1a1d29;">
                         <div class="image">
-                            <a href="" class="image-link">
-                                <img src="./access/img/img4.png" alt="img">
+                            <a href="../movie_details.html" class="image-link">
+                                <img src="./access/img/moei.jpg" alt="img">
+                            </a>
+                        </div>
+                        <div class="content">
+                            <div class="describe">
+                                <span class="describe-one">T16</span>
+                                <span class="describe-two">Phụ đề</span>
+                                <span class="describe-three">2D</span>
+                            </div>
+                            <div class="title">
+                                <h2 class="title-name">THE PROMISSED</h2>
+                                <span class="title-category">Thể loại phim: </span>
+                                <span class="title-category-name">Horror</span>
+                            </div>
+                            <div class="button">
+                                <div class="button-buy">
+                                     <a href="bookTicket.html" class="buttons">
+                                        <i class="fa-solid fa-ticket" style="font-size: 20px; margin-right: 6px;"></i>
+                                        Mua vé ngay
+                                    </a>                                   
+                                </div>
+                                <div class="button-icon">
+                                    <i class="fa-solid fa-circle-info" style="color: #fff;"></i>
+                                </div>
+                            </div>
+                    
+                        </div>
+                    </div>
+                    </div>
+                    <div class="container-card col-sm-6 col-md-4 col-lg-3">
+                        <div class="card image-item" style=" background-color: #1a1d29;">
+                        <div class="image">
+                            <a href="../movie_details.html" class="image-link">
+                                <img src="./access/img/madame.jpg" alt="img">
                             </a>
                         </div>
                         <div class="content">
@@ -163,10 +254,12 @@
                     
                         </div>
                     </div>
-                    <div class="image-item">
+                    </div>
+                    <div class="container-card col-sm-6 col-md-4 col-lg-3">
+                        <div class="card image-item" style="background-color: #1a1d29;">
                         <div class="image">
-                            <a href="" class="image-link">
-                                <img src="./access/img/img7.jpg" alt="img">
+                            <a href="../movie_details.html" class="image-link">
+                                <img src="./access/img/quatmotrungma.jpg" alt="img">
                             </a>
                         </div>
                         <div class="content">
@@ -176,7 +269,7 @@
                                 <span class="describe-three">2D</span>
                             </div>
                             <div class="title">
-                                <h2 class="title-name">Kẻ ăn hồn</h2>
+                                <h2 class="title-name">EXHUMA</h2>
                                 <span class="title-category">Thể loại phim: </span>
                                 <span class="title-category-name">Horror</span>
                             </div>
@@ -194,10 +287,12 @@
                     
                         </div>
                     </div>
-                    <div class="image-item">
+                    </div>
+                    <div class="container-card col-sm-6 col-md-4 col-lg-3">
+                        <div class="card image-item" style="background-color: #1a1d29;">
                         <div class="image">
-                            <a href="" class="image-link">
-                                <img src="./access/img/img9.jpg" alt="img">
+                            <a href="./movie_details.html" class="image-link">
+                                <img src="./access/img/referenceSchemeHeadOfficeallowPlaceHoldertrueheight700ldapp-1.jpg" alt="img">
                             </a>
                         </div>
                         <div class="content">
@@ -207,9 +302,9 @@
                                 <span class="describe-three">2D</span>
                             </div>
                             <div class="title">
-                                <h2 class="title-name">Kẻ ăn hồn</h2>
+                                <h2 class="title-name">QUÝ CÔ THỪA KẾ 2</h2>
                                 <span class="title-category">Thể loại phim: </span>
-                                <span class="title-category-name">Horror</span>
+                                <span class="title-category-name">Dramma</span>
                             </div>
                             <div class="button">
                                 <div class="button-buy">
@@ -225,22 +320,24 @@
                     
                         </div>
                     </div>
-                    <div class="image-item">
+                    </div>
+                    <div class="container-card col-sm-6 col-md-4 col-lg-3">
+                        <div class="card image-item" style=" background-color: #1a1d29;">
                         <div class="image">
-                            <a href="" class="image-link">
-                                <img src="./access/img/img10.jpg" alt="img">
+                            <a href="../movie_details.html" class="image-link">
+                                <img src="./access/img/sang_den.jpg" alt="img">
                             </a>
                         </div>
                         <div class="content">
                             <div class="describe">
-                                <span class="describe-one">T16</span>
+                                <span class="describe-one">K</span>
                                 <span class="describe-two">Phụ đề</span>
                                 <span class="describe-three">2D</span>
                             </div>
                             <div class="title">
-                                <h2 class="title-name">Kẻ ăn hồn</h2>
+                                <h2 class="title-name">SÁNG ĐÈN</h2>
                                 <span class="title-category">Thể loại phim: </span>
-                                <span class="title-category-name">Horror</span>
+                                <span class="title-category-name">Romance</span>
                             </div>
                             <div class="button">
                                 <div class="button-buy">
@@ -256,119 +353,156 @@
                     
                         </div>
                     </div>
-                    <div class="image-item">
-                        <div class="image">
-                            <a href="" class="image-link">
-                                <img src="./access/img/img11.jpg" alt="img">
-                            </a>
-                        </div>
-                        <div class="content">
-                            <div class="describe">
-                                <span class="describe-one">T16</span>
-                                <span class="describe-two">Phụ đề</span>
-                                <span class="describe-three">2D</span>
-                            </div>
-                            <div class="title">
-                                <h2 class="title-name">Kẻ ăn hồn</h2>
-                                <span class="title-category">Thể loại phim: </span>
-                                <span class="title-category-name">Horror</span>
-                            </div>
-                            <div class="button">
-                                <div class="button-buy">
-                                     <a href="bookTicket.html" class="buttons">
-                                        <i class="fa-solid fa-ticket" style="font-size: 20px; margin-right: 6px;"></i>
-                                        Mua vé ngay
-                                    </a>                                   
-                                </div>
-                                <div class="button-icon">
-                                    <i class="fa-solid fa-circle-info" style="color: #fff;"></i>
-                                </div>
-                            </div>
-                    
-                        </div>
-                    </div>  
-                    <div class="image-item">
-                        <div class="image">
-                            <a href="" class="image-link">
-                                <img src="./access/img/img12.jpg" alt="img">
-                            </a>
-                        </div>
-                        <div class="content">
-                            <div class="describe">
-                                <span class="describe-one">T16</span>
-                                <span class="describe-two">Phụ đề</span>
-                                <span class="describe-three">2D</span>
-                            </div>
-                            <div class="title">
-                                <h2 class="title-name">Kẻ ăn hồn</h2>
-                                <span class="title-category">Thể loại phim: </span>
-                                <span class="title-category-name">Horror</span>
-                            </div>
-                            <div class="button">
-                                <div class="button-buy">
-                                     <a href="bookTicket.html" class="buttons">
-                                        <i class="fa-solid fa-ticket" style="font-size: 20px; margin-right: 6px;"></i>
-                                        Mua vé ngay
-                                    </a>                                   
-                                </div>
-                                <div class="button-icon">
-                                    <i class="fa-solid fa-circle-info" style="color: #fff;"></i>
-                                </div>
-                            </div>
-                    
-                        </div>
                     </div>
-                    <div class="image-item">
-                        <div class="image">
-                            <a href="" class="image-link">
-                                <img src="./access/img/img13.jpg" alt="img">
-                            </a>
-                        </div>
-                         <div class="content">
-                            <div class="describe">
-                                <span class="describe-one">T16</span>
-                                <span class="describe-two">Phụ đề</span>
-                                <span class="describe-three">2D</span>
-                            </div>
-                            <div class="title">
-                                <h2 class="title-name">Kẻ ăn hồn</h2>
-                                <span class="title-category">Thể loại phim: </span>
-                                <span class="title-category-name">Horror</span>
-                            </div>
-                            <div class="button">
-                                <div class="button-buy">
-                                     <a href="bookTicket.html" class="buttons">
-                                        <i class="fa-solid fa-ticket" style="font-size: 20px; margin-right: 6px;"></i>
-                                        Mua vé ngay
-                                    </a>                                   
-                                </div>
-                                <div class="button-icon">
-                                    <i class="fa-solid fa-circle-info" style="color: #fff;"></i>
-                                </div>
-                            </div>
-                    
-                        </div>
-                    </div> 
+                </div>
 
+            </div>
+            <div class="container">
+                <div class="row">
+                    <h2 class="topic">Vé bán trước</h2>
+                </div>
+                <div class="row reponsive">
+                    <div class="container-card col-sm-6 col-md-4 col-lg-3">
+                        <div class="card image-item" style="background-color: #1a1d29;">
+                        <div class="image">
+                            <a href="../movie_details.html" class="image-link">
+                                <img src="./access/img/kong.jpg" alt="img">
+                            </a>
+                        </div>
+                        <div class="content">
+                            <div class="describe">
+                                <span class="describe-one">K</span>
+                                <span class="describe-two">Phụ đề</span>
+                                <span class="describe-three">2D/3D</span>
+                            </div>
+                            <div class="title">
+                                <h2 class="title-name">GODZILLA X KONG...</h2>
+                                <span class="title-category">Thể loại phim: </span>
+                                <span class="title-category-name">Action</span>
+                            </div>
+                            <div class="button">
+                                <div class="button-buy">
+                                     <a href="" class="buttons">
+                                        <i class="fa-solid fa-ticket" style="font-size: 20px; margin-right: 6px;"></i>
+                                        Mua vé ngay
+                                    </a>                                   
+                                </div>
+                                <div class="button-icon">
+                                    <i class="fa-solid fa-circle-info" style="color: #fff;"></i>
+                                </div>
+                            </div>
+                    
+                        </div>
+                    </div>
+                    </div>
+                    <div class="container-card col-sm-6 col-md-4 col-lg-3">
+                        <div class="card image-item" style=" background-color: #1a1d29;">
+                        <div class="image">
+                            <a href="../movie_details.html" class="image-link">
+                                <img src="./access/img/suga.jpg" alt="img">
+                            </a>
+                        </div>
+                        <div class="content">
+                            <div class="describe">
+                                <span class="describe-one">T16</span>
+                                <span class="describe-two">Phụ đề</span>
+                                <span class="describe-three">2D</span>
+                            </div>
+                            <div class="title">
+                                <h2 class="title-name">SUGA: AGUST D-TO...</h2>
+                                <span class="title-category">Thể loại phim: </span>
+                                <span class="title-category-name">Musical</span>
+                            </div>
+                            <div class="button">
+                                <div class="button-buy">
+                                     <a href="" class="buttons">
+                                        <i class="fa-solid fa-ticket" style="font-size: 20px; margin-right: 6px;"></i>
+                                        Mua vé ngay
+                                    </a>                                   
+                                </div>
+                                <div class="button-icon">
+                                    <i class="fa-solid fa-circle-info" style="color: #fff;"></i>
+                                </div>
+                            </div>
+                    
+                        </div>
+                    </div>
+                    
+                    
                 </div>
             </div>
-            <div class="container-slider" style=""> 
-                <h2 class="topic">Vé bán trước</h2>
-                <div class="image-slider">
-                    <div class="image-item">
+            <div class="container">
+                <div class="row">
+                    <h2 class="topic">Phim sắp chiếu</h2>
+                </div>
+                <div class="row reponsive">
+                    <div class="container-card col-sm-6 col-md-4 col-lg-3">
+                        <div class="card image-item" style=" background-color: #1a1d29;">
                         <div class="image">
-                            <a href="" class="image-link">
-                                <img src="./access/img/img4.png" alt="img">
+                            <a href="../movie_details.html" class="image-link">
+                                <img src="./access/img/baothu.jpg" alt="img">
                             </a>
                         </div>
                         <div class="content">
-                            <div class="describe">
-                                <span class="describe-one">T16</span>
-                                <span class="describe-two">Phụ đề</span>
-                                <span class="describe-three">2D</span>
-                            </div>
                             <div class="title">
-                                <h2 class="title-name">Kẻ ăn hồn</h2>
+                                <h2 class="title-name">MONKEY MAN</h2>
+                                <span class="title-category">Thể loại phim: </span>
+                                <span class="title-category-name">Action</span>
+                            </div>
+                            <div class="button">
+                                <div class="button-buy">
+                                     <a href="bookTicket.html" class="buttons">
+                                        <i class="fa-solid fa-ticket" style="font-size: 20px; margin-right: 6px;"></i>
+                                        Mua vé ngay
+                                    </a>                                   
+                                </div>
+                                <div class="button-icon">
+                                    <i class="fa-solid fa-circle-info" style="color: #fff;"></i>
+                                </div>
+                            </div>
+                    
+                        </div>
+                    </div>
+                    </div>
+                    <div class="container-card col-sm-6 col-md-4 col-lg-3">
+                        <div class="card image-item" style=" background-color: #1a1d29;">
+                        <div class="image">
+                            <a href="../movie_details.html" class="image-link">
+                                <img src="./access/img/lm7.png" alt="img">
+                            </a>
+                        </div>
+                        <div class="content">
+                            
+                            <div class="title">
+                                <h2 class="title-name">LẬT MẶT 7</h2>
+                                <span class="title-category">Thể loại phim: </span>
+                                <span class="title-category-name">Healing</span>
+                            </div>
+                            <div class="button">
+                                <div class="button-buy">
+                                     <a href="" class="buttons">
+                                        <i class="fa-solid fa-ticket" style="font-size: 20px; margin-right: 6px;"></i>
+                                        Mua vé ngay
+                                    </a>                                   
+                                </div>
+                                <div class="button-icon">
+                                    <i class="fa-solid fa-circle-info" style="color: #fff;"></i>
+                                </div>
+                            </div>
+                    
+                        </div>
+                    </div>
+                    </div>
+                    <div class="container-card col-sm-6 col-md-4 col-lg-3">
+                        <div class="card image-item" style=" background-color: #1a1d29;">
+                        <div class="image">
+                            <a href="../movie_details.html" class="image-link">
+                                <img src="./access/img/mongvuot.jpg" alt="img">
+                            </a>
+                        </div>
+                        <div class="content">
+                            <div class="title">
+                                <h2 class="title-name">MÓNG VUỐT</h2>
                                 <span class="title-category">Thể loại phim: </span>
                                 <span class="title-category-name">Horror</span>
                             </div>
@@ -386,20 +520,17 @@
                     
                         </div>
                     </div>
-                    <div class="image-item">
+                    </div>
+                    <div class="container-card col-sm-6 col-md-4 col-lg-3">
+                        <div class="card image-item" style=" background-color: #1a1d29;">
                         <div class="image">
-                            <a href="" class="image-link">
-                                <img src="./access/img/img7.jpg" alt="img">
+                            <a href="../movie_details.html" class="image-link">
+                                <img src="./access/img/omen.jpg" alt="img">
                             </a>
                         </div>
                         <div class="content">
-                            <div class="describe">
-                                <span class="describe-one">T16</span>
-                                <span class="describe-two">Phụ đề</span>
-                                <span class="describe-three">2D</span>
-                            </div>
                             <div class="title">
-                                <h2 class="title-name">Kẻ ăn hồn</h2>
+                                <h2 class="title-name">B4S TRƯỚC GIỜ YÊU</h2>
                                 <span class="title-category">Thể loại phim: </span>
                                 <span class="title-category-name">Horror</span>
                             </div>
@@ -417,22 +548,19 @@
                     
                         </div>
                     </div>
-                    <div class="image-item">
+                    </div>
+                    <div class="container-card col-sm-6 col-md-4 col-lg-3">
+                        <div class="card image-item" style=" background-color: #1a1d29;">
                         <div class="image">
-                            <a href="" class="image-link">
-                                <img src="./access/img/img9.jpg" alt="img">
+                            <a href="./movie_details.html" class="image-link">
+                                <img src="./access/img/18x2.jpg" alt="img">
                             </a>
                         </div>
                         <div class="content">
-                            <div class="describe">
-                                <span class="describe-one">T16</span>
-                                <span class="describe-two">Phụ đề</span>
-                                <span class="describe-three">2D</span>
-                            </div>
                             <div class="title">
-                                <h2 class="title-name">Kẻ ăn hồn</h2>
+                                <h2 class="title-name">18X2 BEYOND ...</h2>
                                 <span class="title-category">Thể loại phim: </span>
-                                <span class="title-category-name">Horror</span>
+                                <span class="title-category-name">Romance</span>
                             </div>
                             <div class="button">
                                 <div class="button-buy">
@@ -448,22 +576,19 @@
                     
                         </div>
                     </div>
-                    <div class="image-item">
+                    </div>
+                    <div class="container-card col-sm-6 col-md-4 col-lg-3">
+                        <div class="card image-item" style=" background-color: #1a1d29;">
                         <div class="image">
-                            <a href="" class="image-link">
-                                <img src="./access/img/img10.jpg" alt="img">
+                            <a href="./movie_details.html" class="image-link">
+                                <img src="./access/img/teulamlet.jpg" alt="img">
                             </a>
                         </div>
                         <div class="content">
-                            <div class="describe">
-                                <span class="describe-one">T16</span>
-                                <span class="describe-two">Phụ đề</span>
-                                <span class="describe-three">2D</span>
-                            </div>
                             <div class="title">
-                                <h2 class="title-name">Kẻ ăn hồn</h2>
+                                <h2 class="title-name">TẾU LẮM LÉT</h2>
                                 <span class="title-category">Thể loại phim: </span>
-                                <span class="title-category-name">Horror</span>
+                                <span class="title-category-name">Comedy</span>
                             </div>
                             <div class="button">
                                 <div class="button-buy">
@@ -479,330 +604,15 @@
                     
                         </div>
                     </div>
-                    <div class="image-item">
-                        <div class="image">
-                            <a href="" class="image-link">
-                                <img src="./access/img/img11.jpg" alt="img">
-                            </a>
-                        </div>
-                        <div class="content">
-                            <div class="describe">
-                                <span class="describe-one">T16</span>
-                                <span class="describe-two">Phụ đề</span>
-                                <span class="describe-three">2D</span>
-                            </div>
-                            <div class="title">
-                                <h2 class="title-name">Kẻ ăn hồn</h2>
-                                <span class="title-category">Thể loại phim: </span>
-                                <span class="title-category-name">Horror</span>
-                            </div>
-                            <div class="button">
-                                <div class="button-buy">
-                                     <a href="bookTicket.html" class="buttons">
-                                        <i class="fa-solid fa-ticket" style="font-size: 20px; margin-right: 6px;"></i>
-                                        Mua vé ngay
-                                    </a>                                   
-                                </div>
-                                <div class="button-icon">
-                                    <i class="fa-solid fa-circle-info" style="color: #fff;"></i>
-                                </div>
-                            </div>
-                    
-                        </div>
-                    </div>  
-                    <div class="image-item">
-                        <div class="image">
-                            <a href="" class="image-link">
-                                <img src="./access/img/img12.jpg" alt="img">
-                            </a>
-                        </div>
-                        <div class="content">
-                            <div class="describe">
-                                <span class="describe-one">T16</span>
-                                <span class="describe-two">Phụ đề</span>
-                                <span class="describe-three">2D</span>
-                            </div>
-                            <div class="title">
-                                <h2 class="title-name">Kẻ ăn hồn</h2>
-                                <span class="title-category">Thể loại phim: </span>
-                                <span class="title-category-name">Horror</span>
-                            </div>
-                            <div class="button">
-                                <div class="button-buy">
-                                     <a href="bookTicket.html" class="buttons">
-                                        <i class="fa-solid fa-ticket" style="font-size: 20px; margin-right: 6px;"></i>
-                                        Mua vé ngay
-                                    </a>                                   
-                                </div>
-                                <div class="button-icon">
-                                    <i class="fa-solid fa-circle-info" style="color: #fff;"></i>
-                                </div>
-                            </div>
-                    
-                        </div>
                     </div>
-                    <div class="image-item">
-                        <div class="image">
-                            <a href="" class="image-link">
-                                <img src="./access/img/img13.jpg" alt="img">
-                            </a>
-                        </div>
-                         <div class="content">
-                            <div class="describe">
-                                <span class="describe-one">T16</span>
-                                <span class="describe-two">Phụ đề</span>
-                                <span class="describe-three">2D</span>
-                            </div>
-                            <div class="title">
-                                <h2 class="title-name">Kẻ ăn hồn</h2>
-                                <span class="title-category">Thể loại phim: </span>
-                                <span class="title-category-name">Horror</span>
-                            </div>
-                            <div class="button">
-                                <div class="button-buy">
-                                     <a href="bookTicket.html" class="buttons">
-                                        <i class="fa-solid fa-ticket" style="font-size: 20px; margin-right: 6px;"></i>
-                                        Mua vé ngay
-                                    </a>                                   
-                                </div>
-                                <div class="button-icon">
-                                    <i class="fa-solid fa-circle-info" style="color: #fff;"></i>
-                                </div>
-                            </div>
-                    
-                        </div>
-                    </div> 
-
                 </div>
             </div>
-            <div class="container-slider" style=""> 
-                <h2 class="topic">Phim sắp chiếu</h2>
-                <div class="image-slider">
-                    <div class="image-item">
-                        <div class="image">
-                            <a href="" class="image-link">
-                                <img src="./access/img/img4.png" alt="img">
-                            </a>
-                        </div>
-                        <div class="content">
-                            <div class="describe">
-                                <span class="describe-one">T16</span>
-                                <span class="describe-two">Phụ đề</span>
-                                <span class="describe-three">2D</span>
-                            </div>
-                            <div class="title">
-                                <h2 class="title-name">Kẻ ăn hồn</h2>
-                                <span class="title-category">Thể loại phim: </span>
-                                <span class="title-category-name">Horror</span>
-                            </div>
-                            <div class="button">
-                                <div class="button-buy">
-                                     <a href="bookTicket.html" class="buttons">
-                                        <i class="fa-solid fa-ticket" style="font-size: 20px; margin-right: 6px;"></i>
-                                        Mua vé ngay
-                                    </a>                                   
-                                </div>
-                                <div class="button-icon">
-                                    <i class="fa-solid fa-circle-info" style="color: #fff;"></i>
-                                </div>
-                            </div>
-                    
-                        </div>
-                    </div>
-                    <div class="image-item">
-                        <div class="image">
-                            <a href="" class="image-link">
-                                <img src="./access/img/img7.jpg" alt="img">
-                            </a>
-                        </div>
-                        <div class="content">
-                            <div class="describe">
-                                <span class="describe-one">T16</span>
-                                <span class="describe-two">Phụ đề</span>
-                                <span class="describe-three">2D</span>
-                            </div>
-                            <div class="title">
-                                <h2 class="title-name">Kẻ ăn hồn</h2>
-                                <span class="title-category">Thể loại phim: </span>
-                                <span class="title-category-name">Horror</span>
-                            </div>
-                            <div class="button">
-                                <div class="button-buy">
-                                     <a href="bookTicket.html" class="buttons">
-                                        <i class="fa-solid fa-ticket" style="font-size: 20px; margin-right: 6px;"></i>
-                                        Mua vé ngay
-                                    </a>                                   
-                                </div>
-                                <div class="button-icon">
-                                    <i class="fa-solid fa-circle-info" style="color: #fff;"></i>
-                                </div>
-                            </div>
-                    
-                        </div>
-                    </div>
-                    <div class="image-item">
-                        <div class="image">
-                            <a href="" class="image-link">
-                                <img src="./access/img/img9.jpg" alt="img">
-                            </a>
-                        </div>
-                        <div class="content">
-                            <div class="describe">
-                                <span class="describe-one">T16</span>
-                                <span class="describe-two">Phụ đề</span>
-                                <span class="describe-three">2D</span>
-                            </div>
-                            <div class="title">
-                                <h2 class="title-name">Kẻ ăn hồn</h2>
-                                <span class="title-category">Thể loại phim: </span>
-                                <span class="title-category-name">Horror</span>
-                            </div>
-                            <div class="button">
-                                <div class="button-buy">
-                                     <a href="bookTicket.html" class="buttons">
-                                        <i class="fa-solid fa-ticket" style="font-size: 20px; margin-right: 6px;"></i>
-                                        Mua vé ngay
-                                    </a>                                   
-                                </div>
-                                <div class="button-icon">
-                                    <i class="fa-solid fa-circle-info" style="color: #fff;"></i>
-                                </div>
-                            </div>
-                    
-                        </div>
-                    </div>
-                    <div class="image-item">
-                        <div class="image">
-                            <a href="" class="image-link">
-                                <img src="./access/img/img10.jpg" alt="img">
-                            </a>
-                        </div>
-                        <div class="content">
-                            <div class="describe">
-                                <span class="describe-one">T16</span>
-                                <span class="describe-two">Phụ đề</span>
-                                <span class="describe-three">2D</span>
-                            </div>
-                            <div class="title">
-                                <h2 class="title-name">Kẻ ăn hồn</h2>
-                                <span class="title-category">Thể loại phim: </span>
-                                <span class="title-category-name">Horror</span>
-                            </div>
-                            <div class="button">
-                                <div class="button-buy">
-                                     <a href="bookTicket.html" class="buttons">
-                                        <i class="fa-solid fa-ticket" style="font-size: 20px; margin-right: 6px;"></i>
-                                        Mua vé ngay
-                                    </a>                                   
-                                </div>
-                                <div class="button-icon">
-                                    <i class="fa-solid fa-circle-info" style="color: #fff;"></i>
-                                </div>
-                            </div>
-                    
-                        </div>
-                    </div>
-                    <div class="image-item">
-                        <div class="image">
-                            <a href="" class="image-link">
-                                <img src="./access/img/img11.jpg" alt="img">
-                            </a>
-                        </div>
-                        <div class="content">
-                            <div class="describe">
-                                <span class="describe-one">T16</span>
-                                <span class="describe-two">Phụ đề</span>
-                                <span class="describe-three">2D</span>
-                            </div>
-                            <div class="title">
-                                <h2 class="title-name">Kẻ ăn hồn</h2>
-                                <span class="title-category">Thể loại phim: </span>
-                                <span class="title-category-name">Horror</span>
-                            </div>
-                            <div class="button">
-                                <div class="button-buy">
-                                     <a href="bookTicket.html" class="buttons">
-                                        <i class="fa-solid fa-ticket" style="font-size: 20px; margin-right: 6px;"></i>
-                                        Mua vé ngay
-                                    </a>                                   
-                                </div>
-                                <div class="button-icon">
-                                    <i class="fa-solid fa-circle-info" style="color: #fff;"></i>
-                                </div>
-                            </div>
-                    
-                        </div>
-                    </div>  
-                    <div class="image-item">
-                        <div class="image">
-                            <a href="" class="image-link">
-                                <img src="./access/img/img12.jpg" alt="img">
-                            </a>
-                        </div>
-                        <div class="content">
-                            <div class="describe">
-                                <span class="describe-one">T16</span>
-                                <span class="describe-two">Phụ đề</span>
-                                <span class="describe-three">2D</span>
-                            </div>
-                            <div class="title">
-                                <h2 class="title-name">Kẻ ăn hồn</h2>
-                                <span class="title-category">Thể loại phim: </span>
-                                <span class="title-category-name">Horror</span>
-                            </div>
-                            <div class="button">
-                                <div class="button-buy">
-                                     <a href="bookTicket.html" class="buttons">
-                                        <i class="fa-solid fa-ticket" style="font-size: 20px; margin-right: 6px;"></i>
-                                        Mua vé ngay
-                                    </a>                                   
-                                </div>
-                                <div class="button-icon">
-                                    <i class="fa-solid fa-circle-info" style="color: #fff;"></i>
-                                </div>
-                            </div>
-                    
-                        </div>
-                    </div>
-                    <div class="image-item">
-                        <div class="image">
-                            <a href="" class="image-link">
-                                <img src="./access/img/img13.jpg" alt="img">
-                            </a>
-                        </div>
-                         <div class="content">
-                            <div class="describe">
-                                <span class="describe-one">T16</span>
-                                <span class="describe-two">Phụ đề</span>
-                                <span class="describe-three">2D</span>
-                            </div>
-                            <div class="title">
-                                <h2 class="title-name">Kẻ ăn hồn</h2>
-                                <span class="title-category">Thể loại phim: </span>
-                                <span class="title-category-name">Horror</span>
-                            </div>
-                            <div class="button">
-                                <div class="button-buy">
-                                     <a href="bookTicket.html" class="buttons">
-                                        <i class="fa-solid fa-ticket" style="font-size: 20px; margin-right: 6px;"></i>
-                                        Mua vé ngay
-                                    </a>                                   
-                                </div>
-                                <div class="button-icon">
-                                    <i class="fa-solid fa-circle-info" style="color: #fff;"></i>
-                                </div>
-                            </div>
-                    
-                        </div>
-                    </div> 
-
-                </div>
-            </div>
-            <div id="carouselExampleIndicators" class="carousel slide" style="padding: 40px;" >
+            
+            
+            <div id="carouselExampleIndicators" class="container carousel slide" style="padding: 40px;" >
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                
                 </div>
                 <div class="carousel-inner" style="border-radius:40px" >
                     <div class="carousel-item active" >
@@ -822,265 +632,291 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
-            <div class="bhdMember" style="background-color:#0d0e14;">
-                <div class="bhdMember-title">
-                    <img src="./access/img/bhdstarmember.png" alt="img">
-                </div>
-                <div class="bgdMember-item">
-                    <div class="bhdMember-item-cart">
-                        <img src="./access/img/dong.png" alt="">
+            <div class="container-fluid">
+                <div class="container-fluid bhdMember" style="background-color:#0d0e14;">
+                    <div class="bhdMember-title">
+                        <img src="./access/img/bhdstarmember.png" alt="img">
                     </div>
-                    <div class="bhdMember-item-cart">
-                        <img src="./access/img/vang.png" alt="">
+                    <div class="container-fluid mt-5 bgdMember-item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="bhdMember-item-cart">
+                                    <img src="./access/img/dong.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class=" bhdMember-item-cart" >
+                                    <img src="./access/img/vang.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class=" bhdMember-item-cart">
+                                    <img src="./access/img/bac.png" alt="">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="bhdMember-item-cart">
-                        <img src="./access/img/bac.png" alt="">
+                    <div class="bgdMember-button">
+                        <a href="./dangky.html">
+                            <button class="bgdMember-button-login">Đăng ký ngay</button>
+                        </a>
                     </div>
-                </div>
-                <div class="bgdMember-button">
-                    <a href="./dangky.html">
-                        <button class="bgdMember-button-login">Đăng ký ngay</button>
-                    </a>
                 </div>
             </div>
             <!-- khuyen mai -->
+
             <div class="container-slider-sale" style=""> 
                 <h2 class="topic">Khuyến mãi</h2>
-                <div class="image-slider-sale">
-                    <div class="image-item-sale">
-                        <div class="image-sale" >
-                            <a href="" class="image-link">
-                                <img src="./access/img/sale1.png" alt="img">
-                            </a>
+                <div class="container">
+                    <div class="row sale">
+                        <div class="col-md-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="row image-item-sale">
+                                <div class="row image-sale" >
+                                    <a href="" class="row image-link">
+                                        <img src="./access/img/sale4.png" alt="img">
+                                    </a>
+                                </div>
+                                <div class="row title-sale">
+                                    <div class="row title-sale-name">
+                                        <h3>Chạm thẻ visa-tặng ngay bắp lớn</h3>
+                                    </div>
+                                    <div class="row title-sale-date">
+                                        <p>Thời gian khuyên mãi: 26/8/2023 - 26/9/2023</p>
+                                    </div>
+                                </div> 
+                            </div>
                         </div>
-                        <div class="title-sale">
-                            <div class="title-sale-name">
-                                <h3>Quét mã QR - Thẳng tiến vào rạp</h3>
+                        <div class="col-md-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="row image-item-sale">
+                                <div class="row image-sale" >
+                                    <a href="" class="row image-link">
+                                        <img src="./access/img/sale1.png" alt="img">
+                                    </a>
+                                </div>
+                                <div class="row title-sale">
+                                    <div class="row title-sale-name">
+                                        <h3>Quét mã QR - Thẳng tiến vào rạp</h3>
+                                    </div>
+                                    <div class="row title-sale-date">
+                                        <p>Thời gian khuyên mãi: 26/8/2023 - 26/9/2023</p>
+                                    </div>
+                                </div> 
                             </div>
-                            <div class="title-sale-date">
-                                <p>Thời gian khuyên mãi: 26/8/2023 - 26/9/2023</p>
+                        </div>
+                        <div class="col-md-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="row image-item-sale">
+                                <div class="row image-sale" >
+                                    <a href="" class="row image-link">
+                                        <img src="./access/img/sale3.png" alt="img">
+                                    </a>
+                                </div>
+                                <div class="row title-sale">
+                                    <div class="row title-sale-name">
+                                        <h3>Gía Vé Từ 55K–Dành Cho Fan Cứng U22</h3>
+                                    </div>
+                                    <div class="row title-sale-date">
+                                        <p>Thời gian khuyên mãi: 26/8/2023 - 26/9/2023</p>
+                                    </div>
+                                </div> 
                             </div>
-                        </div> 
-                    </div>
-                    <div class="image-item-sale">
-                        <div class="image-sale" >
-                            <a href="" class="image-link">
-                                <img src="./access/img/sale1.png" alt="img">
-                            </a>
-                        </div> 
-                        <div class="title-sale">
-                            <div class="title-sale-name">
-                                <h3>Quét mã QR - Thẳng tiến vào rạp</h3>
+                        </div>
+                        <div class="col-md-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="row image-item-sale">
+                                <div class="row image-sale" >
+                                    <a href="" class="row image-link">
+                                        <img src="./access/img/sale2.png" alt="img">
+                                    </a>
+                                </div>
+                                <div class="row title-sale">
+                                    <div class="row title-sale-name">
+                                        <h3>Quét mã QR - Thẳng tiến vào rạp</h3>
+                                    </div>
+                                    <div class="row title-sale-date">
+                                        <p>Thời gian khuyên mãi: 26/8/2023 - 26/9/2023</p>
+                                    </div>
+                                </div> 
                             </div>
-                            <div class="title-sale-date">
-                                <p>Thời gian khuyên mãi: 26/8/2023 - 26/9/2023</p>
-                            </div>
-                        </div>                      
-                    </div>
-                    <div class="image-item-sale">
-                        <div class="image-sale" >
-                            <a href="" class="image-link">
-                                <img src="./access/img/sale1.png" alt="img">
-                            </a>
-                        </div> 
-                        <div class="title-sale">
-                            <div class="title-sale-name">
-                                <h3>Quét mã QR - Thẳng tiến vào rạp</h3>
-                            </div>
-                            <div class="title-sale-date">
-                                <p>Thời gian khuyên mãi: 26/8/2023 - 26/9/2023</p>
-                            </div>
-                        </div>                      
-                    </div>
-                    <div class="image-item-sale">
-                        <div class="image-sale" >
-                            <a href="" class="image-link">
-                                <img src="./access/img/sale1.png" alt="img">
-                            </a>
-                        </div> 
-                        <div class="title-sale">
-                            <div class="title-sale-name">
-                                <h3>Quét mã QR - Thẳng tiến vào rạp</h3>
-                            </div>
-                            <div class="title-sale-date">
-                                <p>Thời gian khuyên mãi: 26/8/2023 - 26/9/2023</p>
-                            </div>
-                        </div>                      
+                        </div>
+                        
+                       
                     </div>
                 </div>
             </div>
-
-            <div class="container-slider-sale" style=""> 
+            <div class="container-slider-sale" > 
                 <h2 class="topic">Sự kiện</h2>
-                <div class="image-slider-sale">
-                    <div class="image-item-sale">
-                        <div class="image-sale" >
-                            <a href="" class="image-link">
-                                <img src="./access/img/sale1.png" alt="img">
-                            </a>
+                <div class="container">
+                    <div class="row sale">
+                        <div class="col-md-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="row image-item-sale">
+                                <div class="row image-sale" >
+                                    <a href="" class="row image-link">
+                                        <img src="./access/img/sk1.png" alt="img">
+                                    </a>
+                                </div>
+                                <div class="row title-sale">
+                                    <div class="row title-sale-name">
+                                        <h3>Happy day thứ 2 giá rẻ-Chỉ từ 60k/vé</h3>
+                                    </div>
+                                    <div class="row title-sale-date">
+                                        <p>Thời gian khuyên mãi: 26/8/2023 - 26/9/2023</p>
+                                    </div>
+                                </div> 
+                            </div>
                         </div>
-                        <div class="title-sale">
-                            <div class="title-sale-name">
-                                <h3>Quét mã QR - Thẳng tiến vào rạp</h3>
+                        <div class="col-md-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="row image-item-sale">
+                                <div class="row image-sale" >
+                                    <a href="" class="row image-link">
+                                        <img src="./access/img/sk2.png" alt="img">
+                                    </a>
+                                </div>
+                                <div class="row title-sale">
+                                    <div class="row title-sale-name">
+                                        <h3>Dịch vụ sự kiện-is ready for service</h3>
+                                    </div>
+                                    <div class="row title-sale-date">
+                                        <p>Thời gian khuyên mãi: 26/8/2023 - 26/9/2023</p>
+                                    </div>
+                                </div> 
                             </div>
-                            <div class="title-sale-date">
-                                <p>Thời gian khuyên mãi: 26/8/2023 - 26/9/2023</p>
+                        </div>
+                        <div class="col-md-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="row image-item-sale">
+                                <div class="row image-sale" >
+                                    <a href="" class="row image-link">
+                                        <img src="./access/img/sk3.jpg" alt="img">
+                                    </a>
+                                </div>
+                                <div class="row title-sale">
+                                    <div class="row title-sale-name">
+                                        <h3>QUÀ TẶNG CHO NỬA THỨ GIỚI</h3>
+                                    </div>
+                                    <div class="row title-sale-date">
+                                        <p>Thời gian khuyên mãi: 26/8/2023 - 26/9/2023</p>
+                                    </div>
+                                </div> 
                             </div>
-                        </div> 
-                    </div>
-                    <div class="image-item-sale">
-                        <div class="image-sale" >
-                            <a href="" class="image-link">
-                                <img src="./access/img/sale1.png" alt="img">
-                            </a>
-                        </div> 
-                        <div class="title-sale">
-                            <div class="title-sale-name">
-                                <h3>Quét mã QR - Thẳng tiến vào rạp</h3>
+                        </div>
+                        <div class="col-md-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="row image-item-sale">
+                                <div class="row image-sale" >
+                                    <a href="" class="row image-link">
+                                        <img src="./access/img/sale2.png" alt="img">
+                                    </a>
+                                </div>
+                                <div class="row title-sale">
+                                    <div class="row title-sale-name">
+                                        <h3>Gía Vé Từ 55K – Dành Cho Fan Cứng U22</h3>
+                                    </div>
+                                    <div class="row title-sale-date">
+                                        <p>Thời gian khuyên mãi: 26/8/2023 - 26/9/2023</p>
+                                    </div>
+                                </div> 
                             </div>
-                            <div class="title-sale-date">
-                                <p>Thời gian khuyên mãi: 26/8/2023 - 26/9/2023</p>
-                            </div>
-                        </div>                      
-                    </div>
-                    <div class="image-item-sale">
-                        <div class="image-sale" >
-                            <a href="" class="image-link">
-                                <img src="./access/img/sale1.png" alt="img">
-                            </a>
-                        </div> 
-                        <div class="title-sale">
-                            <div class="title-sale-name">
-                                <h3>Quét mã QR - Thẳng tiến vào rạp</h3>
-                            </div>
-                            <div class="title-sale-date">
-                                <p>Thời gian khuyên mãi: 26/8/2023 - 26/9/2023</p>
-                            </div>
-                        </div>                      
-                    </div>
-                    <div class="image-item-sale">
-                        <div class="image-sale" >
-                            <a href="" class="image-link">
-                                <img src="./access/img/sale1.png" alt="img">
-                            </a>
-                        </div> 
-                        <div class="title-sale">
-                            <div class="title-sale-name">
-                                <h3>Quét mã QR - Thẳng tiến vào rạp</h3>
-                            </div>
-                            <div class="title-sale-date">
-                                <p>Thời gian khuyên mãi: 26/8/2023 - 26/9/2023</p>
-                            </div>
-                        </div>                      
+                        </div>
+                        
+                       
                     </div>
                 </div>
             </div>
-            <div class="info">
-                <div class="system">
-                    <div class="info-title title-system">
-                        <h2>VỀ BHD STAR</h2>
+            </div>
+            
+            <div class="container-fluid">
+                <div class="row" id="f" style="background-color: #090b13;">
+                    <div class="col-lg-4 p-5">
+                        <div class="row mt-3">
+                            <div class="h4" style="font-size: 20px; font-weight: 700;color: #fff;">VỀ BHD STAR</div>
+                        </div>
+                        <div class="row mt-3">
+                            <img src="./access/img/vien.PNG" alt="" class="w-25">
+                        </div>
+                        <div class="row mt-4">
+                            <a href="">Hệ thống rạp</a>
+                        </div>
+                        <div class="row mt-4">
+                            <a href="">Cụm rạp</a>
+                        </div>
+                        <div class="row mt-4" >
+                            <a href="">Liên hệ</a>
+                        </div>
+                        <div class="row mt-4">
+                            <img src="./access/img/logo_system.png" alt="" class="w-50">
+                        </div>
                     </div>
-                    <div class="info-system">
-                        <ul class="list-info">
-                            <li class="list-info-item">Hệ thống rạp</li>
-                            <li class="list-info-item">Cụm rạp</li>
-                            <li class="list-info-item">Liên hệ</li>
-                        </ul>
-                    </div>
-                    <div class="logo-system">
-                        <img src="./access/img/logo_system.png" alt="ảnh">
+                    <div class="col-lg-4 p-5">
+                            <div class="row mt-3">
+                                <div class="h4"  style="font-size: 20px; font-weight: 700;color: #fff;">QUY ĐỊNH & ĐIỀU KHOẢN</div>
+                            </div>
+                            <div class="row mt-3">
+                                <img src="./access/img/vien.PNG" alt="" class="w-25">
+                            </div>
+                            <div class="row mt-4">
+                                <a href="">Quy định thành viên</a>
+                            </div>
+                            <div class="row mt-4">
+                                <a href="">Điều khoản</a>
+                            </div>
+                            <div class="row mt-4" >
+                                <a href="">Hướng dẫn đặt vé online</a>
+                            </div>
+                            <div class="row mt-4" >
+                                <a href="">Quy định và chính sách chung</a>
+                            </div>
+                            <div class="row mt-4" >
+                                <a href="">Chính sách bảo vệ thông tin cá nhân của người dùng</a>
+                            </div>
+                        </div>
+                    <div class="col-lg-4 p-5">
+                        <div class="row mt-3">
+                            <div class="h4"  style="font-size: 20px; font-weight: 700;color: #fff;">CHÍNH SÁCH KHÁCH HÀNG</div>
+                        </div>
+                        <div class="row mt-3">
+                            <img src="./access/img/vien.PNG" alt="" class="w-25">
+                        </div>
+                        <div class="row mt-4">
+                            <p><b>Hotline:</b> 19002099</p>
+                            <p><b>Giờ làm việc:</b> 9:00 - 22:00 (Tất cả các ngày bao gồm cả Lễ, Tết)</p>
+                            <p><b>Email hỗ trợ:</b> cskh@bhdstar.vn</p>
+                        </div>
                     </div>
                 </div>
-                <div class="rules">
-                    <div class="info-title title-system">
-                        <h2>QUY ĐỊNH & CHÍNH SÁCH</h2>
+                <div class="row" style=" background-color: #151720;color: #fff; font-size: 16px;">
+                    <div class="col-lg-2 d-flex justify-content-center align-items-center">
+                        <a href="" class="" ><img src="./access/img/logo.png" alt="" class="" style="width: 100px;"></a>
                     </div>
-                    <div class="info-rules">
-                        <ul class="list-info">
-                            <li class="list-info-item">Quy định thành viên</li>
-                            <li class="list-info-item">Điều khoản</li>
-                            <li class="list-info-item">Hướng dẫn đặt vé trực tuyến</li>
-                            <li class="list-info-item">Quy định và chính sách chung</li>
-                            <li class="list-info-item">Chính sách bảo vệ thông tin cá nhân của người dùng</li>
-                        </ul>
+                    <div class="col-lg-10 tex-start">
+                        <p><b>Công ty TNHH MTV Ngôi Sao Cineplex BHD Việt Nam</b></p>
+                        <p><b>Giấy CNĐKDN:</b> Giấy phép kinh doanh số: 0104597158. Đăng ký lần đầu ngày 15 tháng 04 năm 2010</p>
+                        <p><b>Địa Chỉ:</b> Tầng 11, Tòa nhà Hồng Hà Building, Lý Thường Kiệt, P.Phan Chu Trinh, Quận Hoàn Kiếm, Hà Nội</p>
+                        <p><b>Hotline</b>: 19002099</p>
+                        <p>COPYRIGHT 2010 BHD STAR. ALL RIGHTS RESERVED</p>
                     </div>
                     
-                </div>
-                <div class="take-care-of">
-                    <div class="info-title title-take-care-of">
-                        <h2>CHĂM SÓC KHÁCH HÀNG</h2>
-                    </div>
-                    <div class="info-take-care-of">
-                        <ul class="list-info">
-                            <li class="list-info-item">Hotline: 19002099</li>
-                            <li class="list-info-item">Gio làm việc: 9:00 - 22:00</li>
-                            <li class="list-info-item">Email hỗ trợ: cskh@bhdstar.com</li>
-                        </ul>
-                    </div>
-                    <div class="logo-mxh" >
-                        <span style="font-size: 16px;color: #fff;">MANG XÃ HỘI</span>
-                        <br>
-                        <div  class="contact">
-                            <div >
-                                <a href="#">
-                                    <i class="fa-brands fa-square-facebook"></i>
-                                </a>
-                            </div>
-                            <div>
-                                <a href="#">
-                                    <i class="fa-brands fa-square-instagram"></i>
-                                </a>
-                            </div>
-                            <div>
-                                <a href="#">
-                                    <i class="fa-brands fa-tiktok"></i>
-                                </a>
-                            </div>
-                            <div>
-                                <a href="#">
-                                    <i class="fa-brands fa-youtube"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
             </div>
-            <footer class="footer">
-                <div class="footer-logo">
-                    <img src="./access/img/logo.png" alt="logo" class="footer-logo-img" >
-                </div>
-                <div class="footer-text">
-                    <p>
-                        Công ty TNHH MTV Ngôi Sao Cineplex BHD Việt Nam <br>
-                        Giấy CNĐKDN: Giấy phép kinh doanh số: 0104597158. Đăng ký lần đầu ngày 15 tháng 04 năm 2010 <br>
-                        Địa Chỉ: Tầng 11, Tòa nhà Hồng Hà Building, Lý Thường Kiệt, P.Phan Chu Trinh, Quận Hoàn Kiếm, Hà Nội<br>
-                        Hotline: 19002099<br>
-                        COPYRIGHT 2010 BHD STAR. ALL RIGHTS RESERVED
-                    </p>
-                </div>
-            </footer>
-            <script
-              type="text/javascript"
-              src="https://code.jquery.com/jquery-1.11.0.min.js"
-            ></script>
-            <script
-              type="text/javascript"
-              src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
-            ></script>
-            <script
-              type="text/javascript"
-              src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-            ></script>
-
+            </div>
         </div>
-        
-        
     </div>
-       
-
+     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> -->
+     <script src="./access/link/bootstrap.bundle.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
+    <script src="./access/link/jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <script src="./access/link/slick.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js" integrity="sha512-eP8DK17a+MOcKHXC5Yrqzd8WI5WKh6F1TIk5QZ/8Lbv+8ssblcz7oGC8ZmQ/ZSAPa7ZmsCU4e/hcovqR8jfJqA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <script src="./access/link/slick.js"></script>
     <script src="./JS/app.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="./JS/ListFilm.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                if ($(this).scrollTop()){
+                    $(".header-container").addClass('sticky');
+                }else{
+                    $(".header-container").removeClass('sticky');
+                }
+            })
+        })
+    </script>
+    
 </body>
 </html>

@@ -1,196 +1,491 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./access/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <script src="./access/bootstrap-5.3.3-dist/js/jquery-3.7.1.min.js"></script>
+    <script src="./access/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="./access/css/style1.css">
-    <link rel="stylesheet" href="./access/font/fontawesome-free-6.4.0-web/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    
+    <title>Document</title>
 </head>
 <body>
-    <header>
-        <a href=""><img src="./access/img/logo.png" alt=""></a>
-        <ul class="menu">
-            <li><a href="">Quy định</a></li>
-            <li><a href="">FAQ</a></li>
-            <li>
-                <select name="vung" id="vung">
-                    <option value="hcm">TP. HỒ CHÍ MINH</option>
-                    <option value="hn">HÀ NỘI</option>
-                    <option value="dn">ĐỒNG NAI</option>
-                    <option value="hue">Huế</option>
-                </select>
-            </li>
-            <li><input type="submit" value="Đăng nhập/ Đăng ký"></li>
-        </ul>
-    </header>
-    <main style="height: 1200px;">
-        <div class="signin">
-            <h1>Đăng ký tài khoản</h1>
-            <form action="">
-                <div class="o">
-                    <label for="txtH">Họ*</label>
-                    <input type="text" id="txtH" required>
+    <div class="container-fluid">
+        <div class="row" style="margin-top: 200px;">
+            <nav class="navbar navbar-expand-md border-bottom border-3 fixed-top bg-dark">
+                <div class="container-fluid">
+                    <a href="" class="navbar-brand mx-auto" ><img src="./access/img/logo.png" alt="" class="" style="width: 100px;"></a>
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#n1">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse " id="n1">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a href="" class="nav-link">Quy định</a></li>
+                            <li class="nav-item"><a href="" class="nav-link">FAQ</a></li>
+                            <li class="nav-item me-2 mb-2">
+                                <select name="" id="" class="form-select">
+                                    <option value="">TP. HỒ CHÍ MINH</option>
+                                    <option value="">HÀ NỘI</option>
+                                    <option value="">HUẾ</option>
+                                    <option value="">ĐỒNG NAI</option>
+                                </select>
+                            </li>
+                            <li class="nav-item"><button type="button" class="btn btn-success">Đăng Nhập/Đăng Ký</button></li>
+                        </ul>
+                    </div>
+                    
+                    
                 </div>
-                <div class="o">
-                    <label for="txtT">Tên đệm và tên*</label>
-                <input type="text" id="txtT" required>
+            </nav>
+        </div>
+        <div class="row">
+            <p class="h1 p-5">Đăng ký tài khoản</p>
+            <form action="./dangnhap.html" class="w-75 mx-auto">
+                <div class="row">
+                    <div class="col-lg-6 p-4">
+                        <label for="ho" class="form-lable mb-3">Họ</label><span id="errHo">*</span>
+                        <input type="text" name="ho" id="ho" class="form-control">
+                    </div>
+                    <div class="col-lg-6 p-4">
+                        <label for="ten" class="form-lable mb-3">Tên</label><span id="errTen">*</span>
+                        <input type="text" name="ten" id="ten" class="form-control">
+                    </div>
                 </div>
-                <div class="o">
-                    <label for="gt">Giới tính*</label><br>
-                    <input type="radio" id="nam" name="gt" value="Nam">
-                    <label for="nam">Nam</label>
-                    <input type="radio" id="nu" name="gt" value="Nu">
-                    <label for="nu">Nữ</label>
-                    <input type="radio" id="khac" name="gt" value="khac">
-                    <label for="khac">Khác</label>
+                <div class="row">
+                    <div class="col-lg-6 p-4">
+                        <label for="gt" class="form-lable mb-3">Giới tính</label><span id="errGt">*</span><br>
+                        <div class="form-check form-check-inline">
+                            <input type="radio" name="gt" id="male" class="form-check-input" value="Nam">
+                            <label for="male" class="form-check-label">Nam</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input type="radio" name="gt" id="female" class="form-check-input" value="Nữ">
+                            <label for="female" class="form-check-label">Nữ</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input type="radio" name="gt" id="other" class="form-check-input" value="Khác">
+                            <label for="other" class="form-check-label">Khác</label>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 p-4">
+                        <label for="mail" class="form-lable mb-3">Địa chỉ email</label><span id="errMail">*</span>
+                        <input type="email" name="mail" id="mail" class="form-control">
+                    </div>
                 </div>
-                <div class="o">
-                    <label for="txtE">Địa chỉ email*</label>
-                    <input type="email" id="txtE" required>
+                <div class="row">
+                    <div class="col-lg-12 p-4">
+                        <label for="tendn" class="form-lable mb-3">Tên đăng nhập</label><span id="errTenDN">*</span>
+                        <input type="text" name="tendn" id="tendn" class="form-control">
+                    </div>
                 </div>
-                <div class="o">
-                    <label for="txtM">Mật khẩu*</label>
-                    <input type="password" id="txtM" required>
+                <div class="row">
+                    <div class="col-lg-6 p-4">
+                        <label for="mk" class="form-lable mb-3">Mật khẩu</label><span id="errMk">*</span>
+                        <input type="password" name="mk" id="mk" class="form-control">
+                    </div>
+                    <div class="col-lg-6 p-4">
+                        <label for="nmk" class="form-lable mb-3">Nhập lại mật khẩu</label><span id="errNmk">*</span>
+                        <input type="password" name="nmk" id="nmk" class="form-control">
+                    </div>
                 </div>
-                <div class="o">
-                    <label for="txtM2">Nhập lại mật khẩu*</label>
-                    <input type="password" id="txtM2" required>
+                <div class="row">
+                    <div class="col-lg-12 p-4">
+                        <label for="dt" class="form-lable mb-3">Số điện thoại</label><span id="errDt">*</span>
+                        <input type="text" name="dt" id="dt" class="form-control">
+                    </div>
                 </div>
-                <div class="i">
-                    <label for="txtS">Số Điện thoại*</label>
-                    <input type="tel" id="txtS" required>
+                <div class="row">
+                    <label for="" class="form-label p-3">Chọn ngày sinh</label><span id="errNs">*</span>
+                    <div class="col-lg-4 p-4">
+                        <select name="ngay" id="ngay" class="form-select">
+                            <option value="cn">Chọn ngày</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-4 p-4">
+                        <select name="thang" id="thang" class="form-select">
+                            <option value="ct">Chọn tháng</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-4 p-4">
+                        <select name="nam" id="nam" class="form-select">
+                            <option value="cn">Chọn năm</option>
+                        </select>
+                    </div>
                 </div>
-                <div class="i">
-                    <label for="">Ngày sinh*</label><br>
-                    <br>  
-                    <select name="" id="">
-                            <option value="">Chọn ngày</option>
-                    </select>
-                    <select name="" id="">
-                            <option value="">Chọn Tháng</option>
-                    </select>
-                    <select name="" id="">
-                        <option value="">Chọn Năm</option>
-                    </select>
+                <div class="row">
+                    <div class="col-lg-12 p-4">
+                        <label for="tp" class="form-label">Tỉnh/ Thành phố</label><span id="errTp">*</span>
+                        <select name="tp" id="tp" class="form-select">
+                            <option value="ctp">Chọn Tỉnh/ Thành phố</option>
+                            <option value="hcm">Hồ Chí Minh</option>
+                            <option value="hn">Hà Nội</option>
+                            <option value="ag">An Giang</option>
+                        </select>
+                    </div>
                 </div>
-                <div class="i">
-                    <label for="txtC">Tỉnh/Thành phố *
-                        
-                    </label><br>
-                    <select style="width: 100%;" name="" id="txtC">
-                            <option value="">Chọn Tỉnh/Thành Phố</option>
-                    </select>
+                <div class="row">
+                    <div class="col-lg-12 p-4">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="c1">
+                            <label class="form-check-label" for="c1">
+                                Tôi đã đọc, hiểu và đồng ý với các <p><a href="" class="link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover ms-auto">Điều khoản</a></p>
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="c2">
+                            <label class="form-check-label" for="c2">
+                                Nhận thông tin chương trình khuyến mãi
+                            </label>
+                        </div>
+                        <span id="errCheck"></span>
+                    </div>
                 </div>
-                <div class="i">
-                    <label for="check1" class="container">
-                        <input type="checkbox" id="check1" required> 
-                        <span class="checkmark" id="check"></span>
-                        <label for="">tôi đã đọc, hiểu và đồng ý với các <a href="" style="color: yellowgreen;">điều khoản</a></label>
-                    </label>
-                    <label for="check2" class="container">
-                        <input type="checkbox" id="check2" required> 
-                        <span class="checkmark" id="check2"></span>
-                        <label for="check">Nhận thông tin khiến mãi</a></label>
-                    </label>
-                </div>
-                <div class="i">
-                    <input type="submit" value="Đăng ký" style="height: 75px;">
+                <div class="row pb-5 pt-5">
+                    <input type="submit" value="ĐĂNG KÝ" id="dk">
                 </div>
             </form>
         </div>
-    </main>
-    <div class="info">
-        <div class="system">
-            <div class="info-title title-system">
-                <h2>VỀ BHD STAR</h2>
+        <div class="row bg-black" id="f">
+            <div class="col-lg-4 p-5">
+                <div class="row mt-3">
+                    <div class="h4">VỀ BHD STAR</div>
+                </div>
+                <div class="row mt-3">
+                    <img src="./access/img/vien.PNG" alt="" class="w-25">
+                </div>
+                <div class="row mt-4">
+                    <a href="">Hệ thống rạp</a>
+                </div>
+                <div class="row mt-4">
+                    <a href="">Cụm rạp</a>
+                </div>
+                <div class="row mt-4" >
+                    <a href="">Liên hệ</a>
+                </div>
+                <div class="row mt-4">
+                    <img src="./access/img/logo_system.png" alt="" class="w-50">
+                </div>
             </div>
-            <div class="info-system">
-                <ul class="list-info">
-                    <li class="list-info-item">Hệ thống rạp</li>
-                    <li class="list-info-item">Cụm rạp</li>
-                    <li class="list-info-item">Liên hệ</li>
-                </ul>
-            </div>
-            <div class="logo-system">
-                <img src="./access/img/logo_system.png" alt="ảnh">
+            <div class="col-lg-4 p-5">
+                    <div class="row mt-3">
+                        <div class="h4">QUY ĐỊNH & ĐIỀU KHOẢN</div>
+                    </div>
+                    <div class="row mt-3">
+                        <img src="./access/img/vien.PNG" alt="" class="w-25">
+                    </div>
+                    <div class="row mt-4">
+                        <a href="">Quy định thành viên</a>
+                    </div>
+                    <div class="row mt-4">
+                        <a href="">Điều khoản</a>
+                    </div>
+                    <div class="row mt-4" >
+                        <a href="">Hướng dẫn đặt vé online</a>
+                    </div>
+                    <div class="row mt-4" >
+                        <a href="">Quy định và chính sách chung</a>
+                    </div>
+                    <div class="row mt-4" >
+                        <a href="">Chính sách bảo vệ thông tin cá nhân của người dùng</a>
+                    </div>
+                </div>
+            <div class="col-lg-4 p-5">
+                <div class="row mt-3">
+                    <div class="h4">CHÍNH SÁCH KHÁCH HÀNG</div>
+                </div>
+                <div class="row mt-3">
+                    <img src="./access/img/vien.PNG" alt="" class="w-25">
+                </div>
+                <div class="row mt-4">
+                    <p><b>Hotline:</b> 19002099</p>
+                    <p><b>Giờ làm việc:</b> 9:00 - 22:00 (Tất cả các ngày bao gồm cả Lễ, Tết)</p>
+                    <p><b>Email hỗ trợ:</b> cskh@bhdstar.vn</p>
+                </div>
             </div>
         </div>
-        <div class="rules">
-            <div class="info-title title-system">
-                <h2>QUY ĐỊNH & CHÍNH SÁCH</h2>
+        <div class="row">
+            <div class="col-lg-2 d-flex justify-content-center align-items-center">
+                <a href="./index.html" class="" ><img src="./access/img/logo.png" alt="" class="" style="width: 100px;"></a>
             </div>
-            <div class="info-rules">
-                <ul class="list-info">
-                    <li class="list-info-item">Quy định thành viên</li>
-                    <li class="list-info-item">Điều khoản</li>
-                    <li class="list-info-item">Hướng dẫn đặt vé trực tuyến</li>
-                    <li class="list-info-item">Quy định và chính sách chung</li>
-                    <li class="list-info-item">Chính sách bảo vệ thông tin cá nhân của người dùng</li>
-                </ul>
+            <div class="col-lg-10 tex-start">
+                <p><b>Công ty TNHH MTV Ngôi Sao Cineplex BHD Việt Nam</b></p>
+                <p><b>Giấy CNĐKDN:</b> Giấy phép kinh doanh số: 0104597158. Đăng ký lần đầu ngày 15 tháng 04 năm 2010</p>
+                <p><b>Địa Chỉ:</b> Tầng 11, Tòa nhà Hồng Hà Building, Lý Thường Kiệt, P.Phan Chu Trinh, Quận Hoàn Kiếm, Hà Nội</p>
+                <p><b>Hotline</b>: 19002099</p>
+                <p>COPYRIGHT 2010 BHD STAR. ALL RIGHTS RESERVED</p>
             </div>
             
         </div>
-        <div class="take-care-of">
-            <div class="info-title title-take-care-of">
-                <h2>CHĂM SÓC KHÁCH HÀNG</h2>
-            </div>
-            <div class="info-take-care-of">
-                <ul class="list-info">
-                    <li class="list-info-item">Hotline: 19002099</li>
-                    <li class="list-info-item">Gio làm việc: 9:00 - 22:00</li>
-                    <li class="list-info-item">Email hỗ trợ: cskh@bhdstar.com</li>
-                </ul>
-            </div>
-            <div class="logo-mxh" >
-                <span style="font-size: 16px;color: #fff;">MANG XÃ HỘI</span>
-                <br>
-                <div  class="contact">
-                    <div >
-                        <a href="#">
-                            <i class="fa-brands fa-square-facebook"></i>
-                        </a>
-                    </div>
-                    <div>
-                        <a href="#">
-                            <i class="fa-brands fa-square-instagram"></i>
-                        </a>
-                    </div>
-                    <div>
-                        <a href="#">
-                            <i class="fa-brands fa-tiktok"></i>
-                        </a>
-                    </div>
-                    <div>
-                        <a href="#">
-                            <i class="fa-brands fa-youtube"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
     </div>
-    <footer class="footer">
-        <div class="footer-logo">
-            <img src="./access/img/logo.png" alt="logo" class="footer-logo-img" >
-        </div>
-        <div class="footer-text">
-            <p>
-                Công ty TNHH MTV Ngôi Sao Cineplex BHD Việt Nam <br>
-                Giấy CNĐKDN: Giấy phép kinh doanh số: 0104597158. Đăng ký lần đầu ngày 15 tháng 04 năm 2010 <br>
-                Địa Chỉ: Tầng 11, Tòa nhà Hồng Hà Building, Lý Thường Kiệt, P.Phan Chu Trinh, Quận Hoàn Kiếm, Hà Nội<br>
-                Hotline: 19002099<br>
-                COPYRIGHT 2010 BHD STAR. ALL RIGHTS RESERVED
-            </p>
-        </div>
-    </footer>
-    
+    <script>
+        $(document).ready(function(){
+            function taongay(){
+                var selectE=$("#ngay");
+                for(var i=1;i<=31; i++){
+                    var option=$("<option>");
+                        option.val(i);
+                        option.text(i);
+                        selectE.append(option);
+                }
+            }
+            function taothang(){
+                var selectE=$("#thang");
+                for(var i=1;i<=12;i++){
+                    var option=$("<option>");
+                        option.val(i);
+                        option.text(i);
+                        selectE.append(option);
+                }
+            }
+            function taonam(){
+                var selectE=$("#nam");
+                var namHT=new Date().getFullYear();
+                for(var i=1924;i<=namHT;i++){
+                    var option=$("<option>");
+                        option.val(i);
+                        option.text(i);
+                        selectE.append(option);
+                }
+            }
+            taongay();
+            taothang();
+            taonam();
+            function ktHo(){
+                var chuoiHo=$("#ho").val();
+                var mauHo=/^\s*$/;
+                var kq=mauHo.test(chuoiHo);
+                if(kq){
+                    $("#errHo").html(" (Lỗi: Họ không được rỗng)").css("color","red");
+                    return false;
+                }
+                else{
+                    $("#errHo").html("*").css("color","");
+                    return true;
+                }
+            }
+            $("#ho").blur(function(){
+                ktHo();
+            });
+            function ktTen(){
+                var chuoiTen=$("#ten").val();
+                var mauTen=/^\s*$/;
+                var kq=mauTen.test(chuoiTen);
+                if(kq){
+                    $("#errTen").html(" (Lỗi: Tên không được rỗng)").css("color","red");
+                    return false;
+                }
+                else{
+                    $("#errTen").html("*").css("color","");
+                    return true;
+                }
+            }
+            $("#ten").blur(function(){
+                ktTen();
+            });
+            function ktGt(){
+                var gtNam=$("#male").is(":checked");
+                var gtNu=$("#female").is(":checked");
+                var gtKhac=$("#other").is(":checked");
+                if(!gtNam&&!gtNu&&!gtKhac){
+                    $("#errGt").html(" (Lỗi: Vui lòng chọn giới tính)").css("color","red");
+                    return false;
+                }
+                else{
+                    $("#errGt").html("*").css("color","");
+                    return true;
+                }
+            }
+            function ktTenDN(){
+                var chuoiTenDN=$("#tendn").val();
+                var rong=/^\s*$/;
+                var mauTenDN=/^[a-zA-Z0-9_]{3,20}$/;
+                var kq=mauTenDN.test(chuoiTenDN);
+                if(rong.test(chuoiTenDN)){
+                    $("#errTenDN").html(" (Lỗi: Tên đăng nhập không được rỗng)").css("color","red");
+                    return false;
+                }
+                else if(!kq){
+                    $("#errTenDN").html(" (Lỗi: Tên đăng nhập Chỉ chứa các ký tự chữ cái, số và dấu gạch dưới (_) từ 3 đến 20 kí tự)").css("color","red");
+                    return false;
+                }
+                else{
+                    $("#errTenDN").html("*").css("color","");
+                    return true;
+                }
+            }
+            $("#tendn").blur(function(){
+                ktTenDN();
+            });
+            function ktEmail(){
+                var chuoiMail=$("#mail").val();
+                var rong=/^\s*$/;
+                var mauMail=/^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+                var kq=mauMail.test(chuoiMail);
+                if(rong.test(chuoiMail)){
+                    $("#errMail").html(" (Lỗi: Email không được rỗng)").css("color","red");
+                    return false;
+                }
+                //Phải có ký tự @
+                //Ký tự @ không nằm ở vị trí đầu
+                //Phải có ít nhất một dấu . trong địa chỉ mail
+                //Phải có ít nhất 1 ký tự giữa @ và dấu . cuối cùng
+                //Phải có ít nhất một ký tự sau dấu . cuối cùng
+                //Không có khoảng trắng trong địa chỉ mail
+                else if(!kq){
+                    $("#errMail").html(" (Lỗi: Email Nhập không chính xác)").css("color","red");
+                    return false;
+                }
+                else{
+                    $("#errMail").html("*").css("color","");
+                    return true;
+                }
+            }
+            $("#mail").blur(function(){
+                ktEmail();
+            });
+            function ktMatkhau(){
+                var chuoiMk=$("#mk").val();
+                var rong=/^\s*$/;
+                var mauMk=/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{3,}$/;
+                var kq=mauMk.test(chuoiMk);
+                if(rong.test(chuoiMk)){
+                    $("#errMk").html(" (Lỗi: Mật khẩu không được rỗng)").css("color","red");
+                    return false;
+                }
+                //Tối thiểu ba ký tự, ít nhất một chữ cái viết hoa, một chữ cái viết thường, một số và một ký tự đặc biệt:
+                else if(!kq){
+                    $("#errMk").html(" (Lỗi: Mật khẩu nhập không chính xác)").css("color","red");
+                    return false;
+                }
+                else{
+                    $("#errMk").html("*").css("color","");
+                    return true;
+                }
+            }
+            $("#mk").blur(function(){
+                ktMatkhau();
+            });
+            function ktMatkhauNhapLai(){
+                var chuoiNmk=$("#nmk").val();
+                var chuoiMk=$("#mk").val();
+                var rong=/^\s*$/;
+                if(rong.test(chuoiNmk)){
+                    $("#errNmk").html(" (Lỗi: Mật khẩu không được rỗng)").css("color","red");
+                    return false;
+                }
+                else if(chuoiNmk!=chuoiMk){
+                    $("#errNmk").html(" (Lỗi: Mật khẩu nhập lại không chính xác)").css("color","red");
+                    return false;
+                }
+                else{
+                    $("#errNmk").html("*").css("color","");
+                    return true;
+                }
+            }
+            $("#nmk").blur(function(){
+                ktMatkhauNhapLai();
+            });
+            function ktDt(){
+                var chuoiDt=$("#dt").val();
+                var rong=/^\s*$/;
+                var mauDt=/^(03|05|07|08|09)\d{8}$/;
+                var kq=mauDt.test(chuoiDt);
+                if(rong.test(chuoiDt)){
+                    $("#errDt").html(" (Lỗi: Số điện thoại không được rỗng)").css("color","red");
+                    return false;
+                }
+                
+                else if(!kq){
+                    $("#errDt").html(" (Lỗi: Số điện thoại nhập không chính xác)").css("color","red");
+                    return false;
+                }
+                else{
+                    $("#errDt").html("*").css("color","");
+                    return true;
+                }
+            }
+            $("#dt").blur(function(){
+                ktDt();
+            });
+            function ktNgaysinh(){
+                var day=$("#ngay").val();
+                var month=$("#thang").val();
+                var year=$("#nam").val();
+                if(day=="cn"){
+                    $("#errNs").html(" (Lỗi: Vui lòng chọn ngày sinh)").css("color","red");
+                    return false;
+                }
+                else if(month=="ct"){
+                    $("#errNs").html(" (Lỗi: Vui lòng chọn tháng sinh)").css("color","red");
+                }
+                else if(year=="cn"){
+                    $("#errNs").html(" (Lỗi: Vui lòng chọn năm sinh)").css("color","red");
+                }
+                else{
+                    $("#errNs").html("*").css("color","");
+                    return true;
+                }
+            }
+            function ktThanhPho(){
+                var thanhpho=$("#tp").val();
+                if(thanhpho=="ctp"){
+                    $("#errTp").html(" (Lỗi: Vui lòng chọn Tỉnh/ Thành phố)").css("color","red");
+                    return false;
+                }
+                else{
+                    $("#errNs").html("*").css("color","");
+                    return true;
+                }
+            }
+            function ktCheck(){
+                var check1=$("#c1").is(":checked");
+                var check2=$("#c2").is(":checked");
+                if(!check1||!check2){
+                    $("#errCheck").html(" (Lỗi: Vui lòng tích các ô)").css("color","red");
+                    return false;
+                }
+                else{
+                    $("#errCheck").html("*").css("color","");
+                    return true;
+                }
+            }
+            $("#dk").click(function(){
+                if(!ktHo()||!ktTen()||!ktGt()||!ktEmail()||!ktTenDN()||!ktMatkhau||!ktMatkhauNhapLai()||!ktDt()||!ktNgaysinh()||!ktThanhPho()||!ktCheck()){
+                    alert("Thông tin nhập chưa đúng");
+                    return false;
+                }
+                else{
+                    var ho = $("#ho").val();
+                    var ten = $("#ten").val();
+                    var gioitinh = $("input[name='gt']:checked").val();
+                    var email = $("#mail").val();
+                    var matkhau = $("#mk").val();
+                    var dienthoai = $("#dt").val();
+                    var ngay = $("#ngay").val();
+                    var thang = $("#thang").val();
+                    var nam = $("#nam").val();
+                    var tinhthanhpho = $("#tp").val();
+                    var danhSachTaiKhoan = JSON.parse(localStorage.getItem("danhSachTaiKhoan")) || [];
+                    var thongTinUser = {
+                        ho: ho,
+                        ten: ten,
+                        gioitinh: gioitinh,
+                        email: email,
+                        matkhau: matkhau,
+                        dienthoai: dienthoai,
+                        ngay: ngay,
+                        thang: thang,
+                        nam: nam,
+                        tinhthanhpho: tinhthanhpho
+                    };
+                    danhSachTaiKhoan.push(thongTinUser);
+                    localStorage.setItem("danhSachTaiKhoan", JSON.stringify(danhSachTaiKhoan));
+                    window.location.href = "./dangnhap.html";
+                    return true;
+                }
+                
+            })
+        })
+    </script>
 </body>
 </html>
