@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./access/css/style.css">
+    <link rel="stylesheet" href="./access/font/fontawesome-free-6.4.0-web/css/all.min.css">
+    <link rel="stylesheet" href="./access/css/reset.css">
+    <link rel="stylesheet" href="./access/css/app.css">
+    <link rel="stylesheet" href="./access/link/css2.css">
+    <link rel="stylesheet" href="./access/link/bootstrap.min.css">
+    <link rel="stylesheet" href="./access/link/slick-theme.min.css">
+    <link rel="stylesheet" href="./access/link/slick.min.css">
+    <link rel="stylesheet" href="./access/link/fontawesome.min.css">
+    <title>Document</title>
+     <style>
+        .title-bhd{
+            color:#fff;
+            font-weight: 700;
+            padding: 5px;
+        }
+        .title-bhd:hover {
+            cursor: pointer;
+            color: #72BE43;
+        }
+        .card-img-top:hover{
+            transition: all 0.2s linear;
+            cursor: pointer;
+            transform: scale(1.05);
+        }
+     </style>
+</head>
+<body>
+    <div class="container-fluid" style="padding: 0px;">
+        <header>
+            <div class="container-fluid header-container" style="position: fixed; width: 100%;z-index: 100;; padding: 0px;">
+                <nav class="navbar navbar-expand-lg header-main ">
+                    <div class="container" style="padding: 10px 5px;">
+                        <a href="index.html" class="navbar-brand">
+                            <img src="./access/img/logo.png" alt="logo" style="width: 70px; height: 70px;">
+                        </a>
+                        <div class="d-flex align-items-center"> 
+                            <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <i class="fa-solid fa-bars text-white fa-2x"></i>
+                            </button>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeaderContent" aria-controls="navbarHeaderContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <i class="fa-solid fa-user fa-2x text-white"></i>
+                            </button>
+
+                        </div>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="list_main-content navbar-nav me-auto" style="white-space: nowrap;">
+                                <li class="list_main-content-hover nav-item">
+                                    <a href="#list-card">Lịch chiếu</a>
+                                </li>
+                                <li class="list_main-content-hover nav-item">
+                                    <a href="./hethongrap.html">Hệ thống rạp</a>
+                                </li>
+                                <li class="list_main-content-hover nav-item">
+                                    <a href="./sale_event.html">Khuyến mãi/Sự kiện</a>
+                                </li>
+                                <li class="list_main-content-hover nav-item">
+                                    <a href="#">Cửa hàng</a>
+                                </li>
+                                <li class="list_main-content-hover nav-item drop-menu">
+                                    <a href="#">Khác</a>
+                                    <ul class="submenu">
+                                        <li>
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Vị trí</a>
+                                        </li>
+                                        <li><a href="./vechungtoi.html">Dịch vụ quảng cáo</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="collapse navbar-collapse" id="navbarHeaderContent">
+                            <div class="header-main_second">
+                                <div class="row">
+                                    <div class="col-12 col-md-4 mt-3 mt-md-0">
+                                        <div class="container-a container-a-hover container-a-localtion">
+                                            <select name="khuvuc" id="" class="form-select" style="height: 100%; background-color: transparent;color: #fff;font-size: 16px;border: 1px solid #72BE43;z-index: 1000;">
+                                                <option style="background-color:#1a1d29;" value="tphcm">TP. HỒ CHÍ MINH</option>
+                                                <option style="background-color:#1a1d29;" value="hn">HÀ NỘI</option>
+                                                <option style="background-color:#1a1d29 ;" value="hue">HUẾ</option>
+                                                <option style="background-color:#1a1d29 ;" value="dn">ĐỒNG NAI</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-4 mt-3 mt-md-0">
+                                        <div class="container-a container-a-hover container-a-login">
+                                            <a href="./dangnhap.html" class="buttons">
+                                                <span class="text">Đăng nhập/Đăng ký</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-4 mt-3 mt-md-0">
+                                        <div class="container-a container-a-book">
+                                            <a href="./index.html" class="buttons">
+                                                <i class="fa-solid fa-ticket" style="font-size: 20px; margin-right: 6px;"></i>
+                                                Mua vé
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </nav>
+            </div>
+        </header>
+        <div class="container-fluid" style="background-color: #1a1d29;">
+            <div class="container">
+                <div class="row">
+                    <h2 class="topic" style="margin-top: 100px;">Hệ thống rạp</h2>
+                </div>
+                <div class="row">
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+                        <div class="card" style="width: 244px; height: 460px; border-radius: 6px; margin: 8px;background-color: transparent;">
+                            <img src="./access/img/garden.jpg" class="card-img-top" alt="...">
+                            <div class="card-body" >
+                                <i class="fa-solid fa-thumbs-up text-white fa-2x mt-2" style=""></i>
+                                <h2 class="title-bhd">BHD Star The Garden</h2>
+                                <div style="display: flex; align-items:center; justify-content: center;">
+                                    <div class="button" style="width: 90%;">
+                                         <div class="button-buy"  style="width: 90%;">
+                                            <a href="" class="buttons">THÔNG TIN CHI TIẾT</a>                                 
+                                        </div>
+                                    </div>
+                                    <i class="fa-solid fa-share-nodes text-white fa-2x d-none d-md-block" style="width: 10%;" ></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                        <div class="card" style="width: 244px; height: 460px; border-radius: 6px; margin: 8px; background-color: transparent;">
+                            <img src="./access/img/levanviet.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <i class="fa-solid fa-thumbs-up text-white fa-2x mt-2" style=""></i>
+                                <h2 class="title-bhd">BHD Star Le Van Viet</h2>
+                                <div style="display: flex; align-items:center; justify-content: center;">
+                                    <div class="button" style="width: 90%;">
+                                         <div class="button-buy"  style="width: 90%;">
+                                            <a href="" class="buttons">THÔNG TIN CHI TIẾT</a>                         
+                                        </div>
+                                    </div>
+                                    <i class="fa-solid fa-share-nodes text-white fa-2x d-none d-md-block" style="width: 10%;" ></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                        <div class="card" style="width: 244px; height: 460px; border-radius: 6px; margin: 8px; background-color: transparent;">
+                            <img src="./access/img/ngocthach.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <i class="fa-solid fa-thumbs-up text-white fa-2x mt-2" style=""></i>
+                                <h2 class="title-bhd" >BHD Star Ngoc Thach</h2>
+                                <div style="display: flex; align-items:center; justify-content: center;">
+                                    <div class="button" style="width: 90%;">
+                                         <div class="button-buy"  style="width: 90%;">
+                                            <a href="" class="buttons">THÔNG TIN CHI TIẾT</a>                       
+                                        </div>
+                                    </div>
+                                    <i class="fa-solid fa-share-nodes text-white fa-2x d-none d-md-block" style="width: 10%;" ></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                        <div class="card" style="width: 244px; height: 460px; border-radius: 6px;margin: 8px; background-color: transparent;">
+                            <img src="./access/img/longkhanh.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <i class="fa-solid fa-thumbs-up text-white fa-2x mt-2" style=""></i>
+                                <h2 class="title-bhd">BHD Star Long Khanh</h2>
+                                <div style="display: flex; align-items:center; justify-content: center;">
+                                    <div class="button" style="width: 90%;">
+                                         <div class="button-buy"  style="width: 90%;">
+                                            <a href="" class="buttons">THÔNG TIN CHI TIẾT</a>                    
+                                        </div>
+                                    </div>
+                                    <i class="fa-solid fa-share-nodes text-white fa-2x d-none d-md-block" style="width: 10%;" ></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                        <div class="card" style="width: 244px; height: 460px; border-radius: 6px;margin: 8px; background-color: transparent;">
+                            <img src="./access/img/phamhung.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <i class="fa-solid fa-thumbs-up text-white fa-2x mt-2" style=""></i>
+                                <h2 class="title-bhd" >BHD Star Pham Hung</h2>
+                                <div style="display: flex; align-items:center; justify-content: center;">
+                                    <div class="button" style="width: 90%;">
+                                         <div class="button-buy"  style="width: 90%;">
+                                            <a href="" class="buttons">THÔNG TIN CHI TIẾT</a>                         
+                                        </div>
+                                    </div>
+                                    <i class="fa-solid fa-share-nodes text-white fa-2x d-none d-md-block" style="width: 10%;" ></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                        <div class="card" style="width: 244px; height: 460px; border-radius: 6px;margin: 8px; background-color: transparent;">
+                            <img  src="./access/img/quangtrung.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                               <i class="fa-solid fa-thumbs-up text-white fa-2x mt-2" style=""></i>
+                                <h2 class="title-bhd" >BHD Quang Trung</h2>
+                                <div style="display: flex; align-items:center; justify-content: center;">
+                                    <div class="button" style="width: 90%;">
+                                         <div class="button-buy"  style="width: 90%;">
+                                            <a href="" class="buttons">THÔNG TIN CHI TIẾT</a>                        
+                                        </div>
+                                    </div>
+                                    <i class="fa-solid fa-share-nodes text-white fa-2x d-none d-md-block" style="width: 10%;" ></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card" style="width: 244px; height: 460px; border-radius: 6px;margin: 8px; background-color: transparent;">
+                            <img src="./access/img/thaodien.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <i class="fa-solid fa-thumbs-up text-white fa-2x mt-2" style=""></i>
+                                <h2 class="title-bhd">BHD Star Thao Dien</h2>
+                                <div style="display: flex; align-items:center; justify-content: center;">
+                                    <div class="button" style="width: 90%;">
+                                         <div class="button-buy"  style="width: 90%;">
+                                            <a href="" class="buttons">THÔNG TIN CHI TIẾT</a>                       
+                                        </div>
+                                    </div>
+                                    <i class="fa-solid fa-share-nodes text-white fa-2x d-none d-md-block" style="width: 10%;" ></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card" style="width: 244px; height: 460px; border-radius: 6px;margin: 8px; background-color: transparent;">
+                            <img src="./access/img/hue.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                               <i class="fa-solid fa-thumbs-up text-white fa-2x mt-2" style=""></i>
+                                <h2 class="title-bhd" >BHD Star Hue</h2>
+                                <div style="display: flex; align-items:center; justify-content: center;">
+                                    <div class="button" style="width: 90%;">
+                                         <div class="button-buy"  style="width: 90%;">
+                                            <a href="" class="buttons">THÔNG TIN CHI TIẾT</a>                     
+                                        </div>
+                                    </div>
+                                    <i class="fa-solid fa-share-nodes text-white fa-2x d-none d-md-block" style="width: 10%;" ></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card" style="width: 244px; height: 460px; border-radius: 6px;margin: 8px; background-color: transparent;">
+                            <img src="./access/img/discovery.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                               <i class="fa-solid fa-thumbs-up text-white fa-2x mt-2" style=""></i>
+                                <h2 class="title-bhd" >BHD Star Discovery</h2>
+                                <div style="display: flex; align-items:center; justify-content: center;">
+                                    <div class="button" style="width: 90%;">
+                                         <div class="button-buy"  style="width: 90%;">
+                                            <a href="" class="buttons">THÔNG TIN CHI TIẾT</a>                     
+                                        </div>
+                                    </div>
+                                    <i class="fa-solid fa-share-nodes text-white fa-2x d-none d-md-block" style="width: 10%;" ></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card" style="width: 244px; height: 460px; border-radius: 6px;margin: 8px; background-color: transparent;">
+                            <img src="./access/img/start3-2.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                               <i class="fa-solid fa-thumbs-up text-white fa-2x mt-2" style=""></i>
+                                <h2 class="title-bhd" >BHD Star 3.2</h2>
+                                <div style="display: flex; align-items:center; justify-content: center;">
+                                    <div class="button" style="width: 90%;">
+                                         <div class="button-buy"  style="width: 90%;">
+                                            <a href="" class="buttons">THÔNG TIN CHI TIẾT</a>                     
+                                        </div>
+                                    </div>
+                                    <i class="fa-solid fa-share-nodes text-white fa-2x d-none d-md-block" style="width: 10%;" ></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+                <div class="row" id="f" style="background-color: #090b13;">
+                    <div class="col-lg-4 p-5">
+                        <div class="row mt-3">
+                            <div class="h4" style="font-size: 20px; font-weight: 700;color: #fff;">VỀ BHD STAR</div>
+                        </div>
+                        <div class="row mt-3">
+                            <img src="./access/img/vien.PNG" alt="" class="w-25">
+                        </div>
+                        <div class="row mt-4">
+                            <a href="">Hệ thống rạp</a>
+                        </div>
+                        <div class="row mt-4">
+                            <a href="">Cụm rạp</a>
+                        </div>
+                        <div class="row mt-4" >
+                            <a href="">Liên hệ</a>
+                        </div>
+                        <div class="row mt-4">
+                            <img src="./access/img/logo_system.png" alt="" class="w-50">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 p-5">
+                            <div class="row mt-3">
+                                <div class="h4"  style="font-size: 20px; font-weight: 700;color: #fff;">QUY ĐỊNH & ĐIỀU KHOẢN</div>
+                            </div>
+                            <div class="row mt-3">
+                                <img src="./access/img/vien.PNG" alt="" class="w-25">
+                            </div>
+                            <div class="row mt-4">
+                                <a href="">Quy định thành viên</a>
+                            </div>
+                            <div class="row mt-4">
+                                <a href="">Điều khoản</a>
+                            </div>
+                            <div class="row mt-4" >
+                                <a href="">Hướng dẫn đặt vé online</a>
+                            </div>
+                            <div class="row mt-4" >
+                                <a href="">Quy định và chính sách chung</a>
+                            </div>
+                            <div class="row mt-4" >
+                                <a href="">Chính sách bảo vệ thông tin cá nhân của người dùng</a>
+                            </div>
+                        </div>
+                    <div class="col-lg-4 p-5">
+                        <div class="row mt-3">
+                            <div class="h4"  style="font-size: 20px; font-weight: 700;color: #fff;">CHÍNH SÁCH KHÁCH HÀNG</div>
+                        </div>
+                        <div class="row mt-3">
+                            <img src="./access/img/vien.PNG" alt="" class="w-25">
+                        </div>
+                        <div class="row mt-4">
+                            <p><b>Hotline:</b> 19002099</p>
+                            <p><b>Giờ làm việc:</b> 9:00 - 22:00 (Tất cả các ngày bao gồm cả Lễ, Tết)</p>
+                            <p><b>Email hỗ trợ:</b> cskh@bhdstar.vn</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style=" background-color: #151720;color: #fff; font-size: 16px;">
+                    <div class="col-lg-2 d-flex justify-content-center align-items-center">
+                        <a href="" class="" ><img src="./access/img/logo.png" alt="" class="" style="width: 100px;"></a>
+                    </div>
+                    <div class="col-lg-10 tex-start">
+                        <p><b>Công ty TNHH MTV Ngôi Sao Cineplex BHD Việt Nam</b></p>
+                        <p><b>Giấy CNĐKDN:</b> Giấy phép kinh doanh số: 0104597158. Đăng ký lần đầu ngày 15 tháng 04 năm 2010</p>
+                        <p><b>Địa Chỉ:</b> Tầng 11, Tòa nhà Hồng Hà Building, Lý Thường Kiệt, P.Phan Chu Trinh, Quận Hoàn Kiếm, Hà Nội</p>
+                        <p><b>Hotline</b>: 19002099</p>
+                        <p>COPYRIGHT 2010 BHD STAR. ALL RIGHTS RESERVED</p>
+                    </div>
+                    
+            </div>
+            </div>
+
+    </div>
+    
+    <script src="./access/link/bootstrap.bundle.min.js"></script>
+    <script src="./access/link/jquery.min.js"></script>
+    <script src="./access/link/slick.min.js"></script>
+    <script src="./access/link/slick.js"></script>
+    <script src="./JS/app.js"></script>
+    <script src="./JS/ListFilm.js"></script>
+</body>
+</html>

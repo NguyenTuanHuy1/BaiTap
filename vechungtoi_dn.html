@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./access/css/style.css">
+    <link rel="stylesheet" href="./access/font/fontawesome-free-6.4.0-web/css/all.min.css">
+    <link rel="stylesheet" href="./access/css/reset.css"> 
+    <link rel="stylesheet" href="./access/css/app.css">
+    <link rel="stylesheet" href="./access/link/css2.css">
+    <link rel="stylesheet" href="./access/link/bootstrap.min.css">
+    <link rel="stylesheet" href="./access/link/slick-theme.min.css">
+    <link rel="stylesheet" href="./access/link/slick.min.css">
+    <link rel="stylesheet" href="./access/link/fontawesome.min.css">
+</head>
+<body>
+    <div class="container-fluid" style="background-color: #1a1d29;padding: 0px;">
+        <header>
+            <div class="container-fluid header-container" style="position: fixed; width: 100%;z-index: 100;; padding: 0px;">
+                <nav class="navbar navbar-expand-lg header-main ">
+                    <div class="container" style="padding: 10px 5px;">
+                        <a href="./trangchu_dn.html" class="navbar-brand">
+                            <img src="./access/img/logo.png" alt="logo" style="width: 70px; height: 70px;">
+                        </a>
+                        <div class="d-flex align-items-center"> 
+                            <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <i class="fa-solid fa-bars text-white fa-2x"></i>
+                            </button>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeaderContent" aria-controls="navbarHeaderContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <i class="fa-solid fa-user fa-2x text-white"></i>
+                            </button>
+
+                        </div>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="list_main-content navbar-nav me-auto" style="white-space: nowrap;">
+                                <li class="list_main-content-hover nav-item">
+                                    <a href="#list-card">Lịch chiếu</a>
+                                </li>
+                                <li class="list_main-content-hover nav-item">
+                                    <a href="./hethongrap_dn.html">Hệ thống rạp</a>
+                                </li>
+                                <li class="list_main-content-hover nav-item">
+                                    <a href="./sale_event_dn.html">Khuyến mãi/Sự kiện</a>
+                                </li>
+                                <li class="list_main-content-hover nav-item">
+                                    <a href="#">Cửa hàng</a>
+                                </li>
+                                <li class="list_main-content-hover nav-item drop-menu">
+                                    <a href="#">Khác</a>
+                                    <ul class="submenu">
+                                        <li>
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Vị trí</a>
+                                        </li>
+                                        <li><a href="./vechungtoi_dn.html">Dịch vụ quảng cáo</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="collapse navbar-collapse" id="navbarHeaderContent">
+                            <div class="header-main_second">
+                                <div class="row">
+                                    <div class="col-12 col-md-4 mt-3 mt-md-0">
+                                        <div class="container-a container-a-hover container-a-localtion">
+                                            <select name="khuvuc" id="" class="form-select" style="height: 100%; background-color: transparent;color: #fff;font-size: 16px;border: 1px solid #72BE43;z-index: 1000;">
+                                                <option style="background-color:#1a1d29;" value="tphcm">TP. HỒ CHÍ MINH</option>
+                                                <option style="background-color:#1a1d29;" value="hn">HÀ NỘI</option>
+                                                <option style="background-color:#1a1d29 ;" value="hue">HUẾ</option>
+                                                <option style="background-color:#1a1d29 ;" value="dn">ĐỒNG NAI</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-4 mt-3 mt-md-0">
+                                        <div class="d-flex align-items-center">
+                                            <div class="bg-white rounded-circle d-flex justify-content-center align-items-center" style="width: 40px; height: 40px; border: 1px solid yellowgreen;">
+                                                <i class="fa fa-user fa-1x" aria-hidden="true" style="color: grey;"></i>
+                                            </div>
+                                            <a href="./quanlyTaiKhoan.html" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover nav-link ms-2">
+                                                <p id="userInfo" class="text-start mb-0" style="color: yellowgreen;"></p>
+                                            </a>
+                                            <a href="#" class="nav-link mx-2" style="color: yellowgreen;">/</a>
+                                            <a href="./index.html" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover nav-link">Thoát</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-4 mt-3 mt-md-0">
+                                        <div class="container-a container-a-book">
+                                            <a href="#datve" class="buttons">
+                                                <i class="fa-solid fa-ticket" style="font-size: 20px; margin-right: 6px;"></i>
+                                                Mua vé
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </nav>
+            </div>
+        </header>
+        <div class="container">
+            <h2 class="topic" style="margin-top: 100px;">Dịch vụ quảng cáo</h2>
+            <div class="carousel-slick">
+                <div><img  style="width:100%" src="./access/img/qc1.jpg" alt="Slide 1"></div>
+                <div><img style="width:100%" src="./access/img/qc2.jpg" alt="Slide 2"></div>
+                <div><img style="width:100%" src="./access/img/qc3.jpg" alt="Slide 3"></div>
+                <div><img style="width:100%" src="./access/img/qc4.jpg" alt="Slide 4"></div>
+                
+            </div>
+        <div class="container-slider-sale" style="">
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="z-index: 2000;">
+                <div class="modal-dialog">
+                    <div class="modal-content modal-xl" style="max-width: 800px;">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Vị trí rạp phim</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <iframe style="width: 100%;"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125400.44653563939!2d106.5899810390625!3d10.829367600000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175290164e0251b%3A0x8efa606916f6f5f0!2sBHD%20Star%20Cineplex!5e0!3m2!1svi!2s!4v1712664826908!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                       
+                        </div>
+                         <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                                                        
+                        </div>
+                    </div>
+                </div>
+            </div> 
+                <h2 class="topic">Khuyến mãi</h2>
+                <div class="container">
+                    <div class="row sale">
+                        <div class="col-md-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="row image-item-sale">
+                                <div class="row image-sale" >
+                                    <a href="" class="row image-link">
+                                        <img src="./access/img/sale4.png" alt="img">
+                                    </a>
+                                </div>
+                                <div class="row title-sale">
+                                    <div class="row title-sale-name">
+                                        <h3>Chạm thẻ visa–tặng ngay bắp lớn</h3>
+                                    </div>
+                                    <div class="row title-sale-date">
+                                        <p>Thời gian khuyên mãi: 26/8/2023 - 26/9/2023</p>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="row image-item-sale">
+                                <div class="row image-sale" >
+                                    <a href="" class="row image-link">
+                                        <img src="./access/img/sale1.png" alt="img">
+                                    </a>
+                                </div>
+                                <div class="row title-sale">
+                                    <div class="row title-sale-name">
+                                        <h3>Quét mã QR - Thẳng tiến vào rạp</h3>
+                                    </div>
+                                    <div class="row title-sale-date">
+                                        <p>Thời gian khuyên mãi: 26/8/2023 - 26/9/2023</p>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="row image-item-sale">
+                                <div class="row image-sale" >
+                                    <a href="" class="row image-link">
+                                        <img src="./access/img/sale3.png" alt="img">
+                                    </a>
+                                </div>
+                                <div class="row title-sale">
+                                    <div class="row title-sale-name">
+                                        <h3>Gía Vé Từ 55K–Dành Cho Fan Cứng U22</h3>
+                                    </div>
+                                    <div class="row title-sale-date">
+                                        <p>Thời gian khuyên mãi: 26/8/2023 - 26/9/2023</p>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="row image-item-sale">
+                                <div class="row image-sale" >
+                                    <a href="" class="row image-link">
+                                        <img src="./access/img/sale2.png" alt="img">
+                                    </a>
+                                </div>
+                                <div class="row title-sale">
+                                    <div class="row title-sale-name">
+                                        <h3>Quét mã QR - Thẳng tiến vào rạp</h3>
+                                    </div>
+                                    <div class="row title-sale-date">
+                                        <p>Thời gian khuyên mãi: 26/8/2023 - 26/9/2023</p>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                        
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="container-slider-sale" style=""> 
+                <h2 class="topic">Sự kiện</h2>
+                <div class="container">
+                    <div class="row sale">
+                        <div class="col-md-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="row image-item-sale">
+                                <div class="row image-sale" >
+                                    <a href="" class="row image-link">
+                                        <img src="./access/img/sk1.png" alt="img">
+                                    </a>
+                                </div>
+                                <div class="row title-sale">
+                                    <div class="row title-sale-name">
+                                        <h3>Happy day thứ 2 giá rẻ-Chỉ từ 60k/vé</h3>
+                                    </div>
+                                    <div class="row title-sale-date">
+                                        <p>Thời gian khuyên mãi: 26/8/2023 - 26/9/2023</p>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="row image-item-sale">
+                                <div class="row image-sale" >
+                                    <a href="" class="row image-link">
+                                        <img src="./access/img/sk2.png" alt="img">
+                                    </a>
+                                </div>
+                                <div class="row title-sale">
+                                    <div class="row title-sale-name">
+                                        <h3>Dịch vụ sự kiện-is ready for service</h3>
+                                    </div>
+                                    <div class="row title-sale-date">
+                                        <p>Thời gian khuyên mãi: 26/8/2023 - 26/9/2023</p>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="row image-item-sale">
+                                <div class="row image-sale" >
+                                    <a href="" class="row image-link">
+                                        <img src="./access/img/sk3.jpg" alt="img">
+                                    </a>
+                                </div>
+                                <div class="row title-sale">
+                                    <div class="row title-sale-name">
+                                        <h3>QUÀ TẶNG CHO NỬA THỨ GIỚI</h3>
+                                    </div>
+                                    <div class="row title-sale-date">
+                                        <p>Thời gian khuyên mãi: 26/8/2023 - 26/9/2023</p>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="row image-item-sale">
+                                <div class="row image-sale" >
+                                    <a href="" class="row image-link">
+                                        <img src="./access/img/sale2.png" alt="img">
+                                    </a>
+                                </div>
+                                <div class="row title-sale">
+                                    <div class="row title-sale-name">
+                                        <h3>Gía Vé Từ 55K – Dành Cho Fan Cứng U22</h3>
+                                    </div>
+                                    <div class="row title-sale-date">
+                                        <p>Thời gian khuyên mãi: 26/8/2023 - 26/9/2023</p>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                        
+                       
+                    </div>
+                </div>
+            </div>
+             <div class="container-fluid">
+                <div class="row" id="f" style="background-color: #090b13;">
+                    <div class="col-lg-4 p-5">
+                        <div class="row mt-3">
+                            <div class="h4" style="font-size: 20px; font-weight: 700;color: #fff;">VỀ BHD STAR</div>
+                        </div>
+                        <div class="row mt-3">
+                            <img src="./access/img/vien.PNG" alt="" class="w-25">
+                        </div>
+                        <div class="row mt-4">
+                            <a href="">Hệ thống rạp</a>
+                        </div>
+                        <div class="row mt-4">
+                            <a href="">Cụm rạp</a>
+                        </div>
+                        <div class="row mt-4" >
+                            <a href="">Liên hệ</a>
+                        </div>
+                        <div class="row mt-4">
+                            <img src="./access/img/logo_system.png" alt="" class="w-50">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 p-5">
+                            <div class="row mt-3">
+                                <div class="h4"  style="font-size: 20px; font-weight: 700;color: #fff;">QUY ĐỊNH & ĐIỀU KHOẢN</div>
+                            </div>
+                            <div class="row mt-3">
+                                <img src="./access/img/vien.PNG" alt="" class="w-25">
+                            </div>
+                            <div class="row mt-4">
+                                <a href="">Quy định thành viên</a>
+                            </div>
+                            <div class="row mt-4">
+                                <a href="">Điều khoản</a>
+                            </div>
+                            <div class="row mt-4" >
+                                <a href="">Hướng dẫn đặt vé online</a>
+                            </div>
+                            <div class="row mt-4" >
+                                <a href="">Quy định và chính sách chung</a>
+                            </div>
+                            <div class="row mt-4" >
+                                <a href="">Chính sách bảo vệ thông tin cá nhân của người dùng</a>
+                            </div>
+                        </div>
+                    <div class="col-lg-4 p-5">
+                        <div class="row mt-3">
+                            <div class="h4"  style="font-size: 20px; font-weight: 700;color: #fff;">CHÍNH SÁCH KHÁCH HÀNG</div>
+                        </div>
+                        <div class="row mt-3">
+                            <img src="./access/img/vien.PNG" alt="" class="w-25">
+                        </div>
+                        <div class="row mt-4">
+                            <p><b>Hotline:</b> 19002099</p>
+                            <p><b>Giờ làm việc:</b> 9:00 - 22:00 (Tất cả các ngày bao gồm cả Lễ, Tết)</p>
+                            <p><b>Email hỗ trợ:</b> cskh@bhdstar.vn</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style=" background-color: #151720;color: #fff; font-size: 16px;">
+                    <div class="col-lg-2 d-flex justify-content-center align-items-center">
+                        <a href="" class="" ><img src="./access/img/logo.png" alt="" class="" style="width: 100px;"></a>
+                    </div>
+                    <div class="col-lg-10 tex-start">
+                        <p><b>Công ty TNHH MTV Ngôi Sao Cineplex BHD Việt Nam</b></p>
+                        <p><b>Giấy CNĐKDN:</b> Giấy phép kinh doanh số: 0104597158. Đăng ký lần đầu ngày 15 tháng 04 năm 2010</p>
+                        <p><b>Địa Chỉ:</b> Tầng 11, Tòa nhà Hồng Hà Building, Lý Thường Kiệt, P.Phan Chu Trinh, Quận Hoàn Kiếm, Hà Nội</p>
+                        <p><b>Hotline</b>: 19002099</p>
+                        <p>COPYRIGHT 2010 BHD STAR. ALL RIGHTS RESERVED</p>
+                    </div>
+                    
+            </div>
+            </div>
+    </div>
+    <script src="./access/link/bootstrap.bundle.min.js"></script>
+    <script src="./access/link/jquery.min.js"></script>
+    <script src="./access/link/slick.min.js"></script>
+    <script src="./access/link/slick.js"></script>
+    <script src="./JS/app.js"></script>
+    <script src="./JS/ListFilm.js"></script>
+    <script>
+        $(document).ready(function(){
+            var infoKV=localStorage.getItem("selectedRegion");
+            if(infoKV){
+                $("select[name=khuvuc]").val(infoKV);
+            }
+            else{
+                $("#chonkv").modal("show");
+            }
+            $(".region-btn").click(function(){
+                var selectedRegion = $(this).val();
+                localStorage.setItem("selectedRegion",selectedRegion);
+                $("select[name=khuvuc]").val(selectedRegion);
+                $("#chonkv").modal("hide");
+            });
+            $("select[name=khuvuc]").change(function() {
+                var selectedRegion = $(this).val();
+                localStorage.setItem("selectedRegion", selectedRegion);
+            });
+            var userInfo = localStorage.getItem("nguoiDungHienTai");
+            var infoKV=localStorage.getItem("selectedRegion");
+            var user = JSON.parse(userInfo);
+            var userHTML= user.ten+" "+user.ho;
+            document.getElementById("userInfo").innerHTML = userHTML;
+            $(window).scroll(function(){
+                if ($(this).scrollTop()){
+                    $(".header-container").addClass('sticky');
+                }else{
+                    $(".header-container").removeClass('sticky');
+                }
+            })
+        })
+        
+    </script>
+</body>
+</html>

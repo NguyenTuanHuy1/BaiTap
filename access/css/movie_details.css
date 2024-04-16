@@ -5,9 +5,7 @@
     gap: 40px;
     
 } */
-.container{
-    height: 100%;
-}
+
 .movie{
     padding: 0px 40px;
     width: 40%;
@@ -27,7 +25,7 @@
     align-items: center;
 }
 .info-title{
-    padding-bottom: 34px;
+    padding:14px 0px
 }
 .info-title h2{
     color: #72be43;
@@ -35,21 +33,28 @@
 }
 .info-detail{
     width: 60%;
-    font-size: 16px;
+    font-size: 18px;
     float: left;
     
-}
-.info-introduce{
-    padding-bottom: 20px;
     
 }
+.dienVien , .theLoai,.daoDien,.khoiChieu,.thoiLuong,.ngonNgu, .info-introduce-p{
+    font-size: 18px;
+    font-weight: 500;
+    margin: 20px 0px;
+}
+.info-introduce{
+    padding-bottom: 0px;
+    
+}
+.info-detail-text span {
+    margin-bottom: 10px;
+}
+
 .info-introduce p{
-    width: 655px;
+    width: 100%;
 }
-.info-detail-text{
-    padding: 6px 0px;
-    width: 655px;
-}
+
 .info-detail-text-red{
     background-color: #dd1b1b;
     padding: 2px;
@@ -93,6 +98,19 @@
     height: 500px;
     
 }
+
+
+/* Media query for smaller screens */
+@media screen and (max-width: 765px) {
+    .movie  img {
+        height: 500px; 
+        width: 400px;/* Set height for smaller screens */
+    }
+}
+
+
+
+
 /* mobile */
 
 

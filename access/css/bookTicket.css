@@ -85,11 +85,14 @@ a{
     
 }
 
-.step.current:before{
+/* .step.current:before{
     border: none;
-}
+} */
 
-.step.current a{
+.step1.current a,
+.step2.current a,
+.step3.current a,
+.step4.current a{
     border-color: #72be43;
 }
 
@@ -104,11 +107,45 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
 .header-menu .item{
     list-style: none;
     margin: 0px 10px;
+}
+
+.item-city{
+    position: relative;
+    width: 160px;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.menu-city{
+    display: none;
+    position: absolute;
+    width: 260px;
+    padding: 0;
+    right: -22px;
+    top: 100%;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    background-color: rgba(44, 44, 44, 0.29);
+    padding: 10px 0px;
+}
+
+.menu-city .item{
+    padding: 10px 16px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.menu-city .item:hover{
+    background-color: #72be43;
+    color: white;
 }
 
 .header-menu .item a{
@@ -119,6 +156,18 @@ a{
 
 .header-menu .item a:hover{
     color: #72be43;
+}
+
+.item-city:hover {
+    background-color: #72be43;
+}
+
+.item-city:hover > .menu-city{
+    display: block;
+}
+
+.item-city:hover > a{
+    color: white !important;
 }
 
 
@@ -138,6 +187,9 @@ a{
     padding: 20px;
     border: 1px solid #454D6A;
     border-radius: 15px;
+}
+.contentRight + .contentRight{
+    margin-top: 20px;
 }
 
 /* calendar */
@@ -427,4 +479,279 @@ header .current-date{
 .seatItem span{
     margin-left: 5px;
 }
+
+.listSeat .row{
+    justify-content: space-between;
+    align-items: center;
+}
+.alpha,
+.seat{
+    cursor: pointer;
+    width: 36px;
+    height: 25px;
+    margin-top: 26px;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+.seat{
+    background-image: url("../image/ghe-thuong.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.seat-sold{
+    cursor: none;
+    pointer-events:none;
+    background-image: url("../image/ghe-da-ban.png");
+}
+.seat.I{
+    background-image: url("../image/ghe-vip.png");
+}
+.pair-seat{
+    background-image: url("../image/ghe-doi.png");
+}
+.seat-checked{
+    background-image: url("../image/ghe-da-chon.png");
+}
+
+/* step 3 */
+
+.title-step3{
+    text-align: center;
+    margin: 10px 0px;
+    height: 45px;
+}
+.title-step3 span{
+    color: #72be43;
+    font-size: 1.6rem;
+    padding: 10px 14px;
+    border: 1px solid #464d6a;
+    border-radius: 10px;
+}
+
+.menu-fast-food{
+    margin: 0;
+    padding: 0;
+    padding: 10px;
+    margin-top: 6px;
+    border-top: 1px solid #464d6a;
+}
+
+.menu-fast-food .f-item{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 18px;
+}
+
+.wrap-img{
+    width: 90px;
+    height: 90px;
+}
+.wrap-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.describe{
+    flex: 1;
+    margin: 0px 22px;
+}
+
+.qty-count{
+    color: white;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: 1px solid #464d6a;
+    border-radius: 16px;
+}
+.product-qty{
+    text-align: center;
+    width: 50px;
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+.wrap-price{
+    display: flex;
+    flex-direction: column;
+}
+.wrap-price .price{
+    text-decoration: line-through;
+}
+
+.wrap-inp{
+    padding: 14px;
+    border: 1px solid #464d6a;
+    border-radius: 8px;
+}
+.wrap-inp input{
+    border: none;
+    background-color: transparent;
+    width: 80%;
+    color: white;
+}
+.btnApdung{
+    font-size: 18px;
+    padding: 6px 20px;
+    color: white;
+    background-color: #72be43;
+    border-radius: 6px;
+}
+
+/* step4 */
+.menu-payment{
+    margin: 0;
+    padding: 0;
+}
+.menu-payment .item{
+    list-style: none;
+    margin: 16px 0px;
+    display: flex;
+    align-items: center;
+}
+.menu-payment .item img{
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+input[name="payment"] {
+    width: 28px;
+    height: 28px;
+    accent-color: #72be43;
+}
+
+/* responsive */
+@media (max-width: 575.98px) { 
+    /* .header-right-elements{
+        display: none;
+    }
+    .step{
+        width: 12vw;
+    }
+    .step::before{
+        display: none;
+    }
+    .header-logo{
+        width: 32px;
+        height: 32px;
+    }
+    .step a{
+        margin: 0px;
+    } */
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+    /* .header-right-elements{
+        display: none;
+    }
+    .step{
+        width: 12vw;
+    }
+    .step::before{
+        display: none;
+    }
+    .header-logo{
+        width: 32px;
+        height: 32px;
+    } */
+}
+
+/* // Medium devices (tablets, less than 992px) */
+.navbar{
+    display: none;
+}
+@media (max-width: 991.98px) { 
+    .header-menu{
+        display: none;
+    }
+    .header-content{
+        margin: 0;
+    }
+    .step{
+        width: 12vw;
+    }
+    .step::before{
+        display: none;
+    }
+    .header-logo{
+        width: 44px;
+        height: 44px;
+        margin-right: 20px;
+    }
+    .step a{
+        margin: 0px;
+    }
+    .navbar{
+        display: block;
+        background-color: transparent !important;
+    }
+    .modal-dialog,
+    .modal-content{
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: -40%;
+        width: 260px;
+        background-color: black;
+    }
+    .modal-dialog{
+        margin: 0;
+    }
+    @keyframes menu-city-fadeout {
+        from   { 
+            right: -40%;
+        }
+        to { 
+            right: 0%;
+        }
+    }
+    .menu-city-fd{
+        animation: menu-city-fadeout 0.5s ease forwards;
+    }
+    .btn-close-edit{
+        background-color: transparent;
+        border: none;
+        color: white;
+        font-size: 26px;
+        padding: 5px 16px;
+        margin-left: 80%;
+    }
+    .btnBuy{
+        color: white;
+        background-color: #72be43;
+        border: none;
+        font-size: 24px;
+        padding: 10px 24px;
+        border-radius: 6px;
+    }
+    .menu-web{
+        margin: 0;
+        padding: 0;
+        margin-top: 20px;
+    }
+    .menu-web .item{
+        list-style: none;
+        font-size: 18px;
+        padding: 10px 4px;
+        border-top: 2px solid #222735;
+        color: hsla(0, 0%, 100%, .8);
+        cursor: pointer;
+    }
+    .menu-web .item:hover{
+        color: hsla(0, 0%, 100%, 1);
+    }
+}
+
+
+
+
+
 

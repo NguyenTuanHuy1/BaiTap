@@ -8,17 +8,17 @@
             <div class="header-step-by-step">
                 <div class="header-order-steps">
                     <div class="header-wrapper-step">
-                        <div class="step current" data-step="1">
+                        <div class="step step1" data-step="1">
                             <a href="./bookTicketStep1.html">01</a>
                         </div>
-                        <div class="step" data-step="2">
+                        <div class="step step2" data-step="2">
                             <a href="./bookTicketStep2.html">02</a>
                         </div>
-                        <div class="step" data-step="3">
-                            <a href="#/">03</a>
+                        <div class="step step3" data-step="3">
+                            <a href="./bookTicketStep3.html">03</a>
                         </div>
-                        <div class="step" data-step="4">
-                            <a href="#/">04</a>
+                        <div class="step step4" data-step="4">
+                            <a href="./bookTicketStep4.html">04</a>
                         </div>
                     </div>
                 </div>
@@ -34,8 +34,14 @@
                 <li class="item">
                     <a href="#">FAQ</a>
                 </li>
-                <li class="item">
-                    <a href="#">Thanh pho HCM</a>
+                <li class="item item-city">
+                    <a href="#">TP. Hồ Chí Minh</a>
+                    <ul class="menu-city">
+                        <li class="item">TP. Hồ Chí Minh</li>
+                        <li class="item">Hà Nội</li>
+                        <li class="item">TP. Huế</li>
+                        <li class="item">Đồng Nai</li>
+                    </ul>
                 </li>
                 <li class="item">
                     <a href="#">
@@ -47,6 +53,37 @@
                     </a>
                 </li>
             </ul>
+            <nav style="padding: 0;" class="navbar navbar-dark bg-dark">
+                <button class="navbar-toggler" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content menu-city-fd">
+                        <div class="modal-header" style="border-bottom: 2px solid #222735;">
+                          <button type="button" class="btn-close-edit" data-bs-dismiss="modal" aria-label="Close">&#x2715;</button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="content-menu">
+                                <div class="header">
+                                    <button class="btnBuy">Mua vé</button>
+                                </div>
+                                <ul class="menu-web">
+                                    <li class="item">Lịch chiếu</li>
+                                    <li class="item">Hệ thống rạp</li>
+                                    <li class="item">Khuyến mãi/Sự kiện</li>
+                                    <li class="item">Cửa hàng</li>
+                                </ul>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </nav>
+            
         </div>
+        <!-- mobile -->
     </div>
 </div>
+<script>
+</script>

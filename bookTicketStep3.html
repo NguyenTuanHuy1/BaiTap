@@ -4,70 +4,163 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Ticket</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+    </script>
+    <script> 
+        $(function(){
+          $("#header").load("./header.html"); 
+          window.addEventListener("load", (event) => {
+            $('.step3').addClass('current');
+        });
+        });
+    </script> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./access/css/bookTicket.css">
 </head>
 <body>
     <div class="page">
-        <header class="header">
-            <div class="wrapper-header-content">
-                <div class="header-content">
-                    <!-- left  -->
-                    <div class="header-left-elements">
-                        <div class="header-logo">
-                            <img src="./access/image/logomain.png" alt="">
-                        </div>
-                        <div class="header-step-by-step">
-                            <div class="header-order-steps">
-                                <div class="header-wrapper-step">
-                                    <div class="step current" data-step="1">
-                                        <a href="#/">01</a>
+        <header id="header">
+        </header>
+        <div class="container__wrapper">
+            <h4 class="containerTiltle">Bước 3: Chọn đồ ăn</h4>
+            <div class="containerStepContent">
+                    <div class="container">
+                        <div class="row">
+                          <div class="col-xxl-4 col-xl-4 col-lg-4">
+                            <div class="contentLeft">
+                                <div class="filmCart">
+                                    <div class="addressFilmCart">
+                                        <h4 class="addressFilmCartTitle">BHD Star Le Van Viet</h4>
+                                        <span class="screen">Screen 6</span> - 24/2/2024 - Suất chiếu: 17h20
                                     </div>
-                                    <div class="step" data-step="2">
-                                        <a href="#/">02</a>
+                                    <div class="nameFilmCart">
+                                        <h3 class="nameFilmCartTilte">Mai</h3>
+                                        <div class="meta">
+                                            <span class="age-limit T18">T18</span>
+                                            <span class="type">Phụ đề</span>
+                                            <span class="format">2D</span>
+                                        </div>
                                     </div>
-                                    <div class="step" data-step="3">
-                                        <a href="#/">03</a>
+                                    <table class="cart-items"><tbody><tr><td class="title"><span class="quantity">1</span>&nbsp;<span>x</span>&nbsp;<span class="name">Adult-Stand-2D</span><br><span class="description">B17</span></td><td class="price">100.000&nbsp;VND</td></tr></tbody></table>
+                                    <div class="sumMoney">
+                                        <span class="text">
+                                            Tổng tiền
+                                        </span>
+                                        <span class="numberPrice">
+                                            100.000 VND
+                                        </span>
                                     </div>
-                                    <div class="step" data-step="4">
-                                        <a href="#/">04</a>
+                                    <button onclick="chonPhuongThuc(event)" class="chonDoAnBtn chonPhuongThuc">
+                                        <a style="display: block; color: white;" href="./bookTicketStep4.html">
+                                            Chọn phương thức thanh toán (3/4)
+                                        </a>
+                                    </button>
+                                    <div class="backPage">
+                                        <a href="./bookTicketStep2.html">← Trở lại</a>
+                                    </div>
+                                    <div class="timelife">
+                                        <span class="timelifeNumber">Còn lại 5 phút, 55 giây</span>
                                     </div>
                                 </div>
                             </div>
+                          </div>
+                          <div class="col-xxl-8 col-xl-8 col-lg-8">
+                            <div class="contentRight">
+                                <div class="title-step3">
+                                    <span>Concession</span>
+                                </div>
+                                <ul class="menu-fast-food">
+                                </ul>
+                            </div>
+                          </div>
                         </div>
                     </div>
-
-                    <!-- right -->
-                    <div class="header-right-elements">
-                        <ul class="header-menu">
-                            <li class="item">
-                                <a href="#">Quy dinh</a>
-                            </li>
-                            <li class="item">
-                                <a href="#">FAQ</a>
-                            </li>
-                            <li class="item">
-                                <a href="#">Thanh pho HCM</a>
-                            </li>
-                            <li class="item">
-                                <a href="#">
-                                    Tai khoan
-                                </a>
-                                /
-                                <a href="#">
-                                    Thoat
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
             </div>
-        </header>
-        <div class="container">
-
         </div>
         <footer class="footer">
-
         </footer>
     </div>
 </body>
 </html>
+
+<script>
+   
+    let foodArr = [
+        {
+            id: 1,
+            name: 'OL Special Combo1 Bap nam Ga Lac (Sweet) 1',
+            priceSale: 130000,
+            price: 150000,
+            quatity: 0,
+        },
+        {
+            id: 2,
+            name: 'OL Special Combo1 Bap nam Ga Lac (Sweet) 2',
+            priceSale: 130000,
+            price: 150000,
+            quatity: 0,
+        }
+    ]
+    let html = foodArr.map((ele,index)=>{
+        return `
+        <li class="f-item">
+            <div class="wrap-img">
+                <img src="./access/image/fastfood.png" alt="ff">
+            </div>
+            <div class="describe">
+                <p>${ele.name}</p>
+                <div class="quatity">
+                    <button id="${ele.id}" class="qty-count qty-count--minus" data-action="minus" type="button">-</button>
+                    <input id="quatity-${ele.id}" class="product-qty" type="text" name="product-qty" min="0" max="10" value="${ele.quatity}">
+                    <button id="${ele.id}" class="qty-count qty-count--add" data-action="add" type="button">+</button>
+                </div>
+            </div>
+            <div class="wrap-price">
+                <span class="price">${ele.price} VNĐ</span>
+                <span class="onsale">${ele.priceSale} VND</span>
+            </div>
+        </li>
+        `
+    }).join("");
+    $('.menu-fast-food').append(html.toString());
+    let filmChose = JSON.parse(localStorage.getItem('filmChose'));
+    $('.quantity').text(`${filmChose.slGhe}`);
+    $('.numberPrice').text(`${filmChose.price} VND`)
+    $('.nameFilmCartTilte').text(`${filmChose.filmName} `)
+    let priceTotal = filmChose.price;
+    $('.qty-count--minus').click(function(){
+        var id = $(this).attr('id');
+        const foodFound = foodArr.find((ele) => ele.id == id)
+        if(foodFound.quatity > 0){
+            foodFound.quatity = foodFound.quatity - 1;
+            priceTotal = priceTotal - (1 * foodFound.priceSale);
+        }
+        $(`#quatity-${id}`).val(foodFound.quatity)
+        $('.numberPrice').text(`${priceTotal} VND`)
+    })
+    $('.qty-count--add').click(function(){
+        var id = $(this).attr('id');
+        const foodFound = foodArr.find((ele) => ele.id == id)
+        foodFound.quatity = foodFound.quatity + 1;
+        $(`#quatity-${id}`).val(foodFound.quatity)
+        priceTotal = priceTotal + (1 * foodFound.priceSale);
+        $('.numberPrice').text(`${priceTotal} VND`)
+    })
+    function chonPhuongThuc(event){
+        let foodArrChose =  foodArr.filter((ele,index)=>{
+            return ele.quatity > 0;
+        })
+        filmChose = {
+            ...filmChose,
+            foodArrChose,
+            price: priceTotal,
+        }
+        localStorage.setItem('filmChose', JSON.stringify(filmChose));
+        window.location.href = './bookTicketStep4.html'
+    }
+
+</script>

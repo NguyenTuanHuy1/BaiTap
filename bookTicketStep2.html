@@ -13,6 +13,9 @@
     <script> 
         $(function(){
           $("#header").load("./header.html"); 
+          window.addEventListener("load", (event) => {
+            $('.step2').addClass('current');
+          });
         });
     </script> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
@@ -47,11 +50,15 @@
                                     <span class="text">
                                         Tổng tiền
                                     </span>
-                                    <span class="number">
-                                        100.000 VND
+                                    <span class="numberPrice">
+                                        
                                     </span>
                                 </div>
-                                <button class="chonDoAnBtn">Chọn đồ ăn (2/4)</button>
+                                <button style="padding: 0;" onclick="chondoAn(event)" class="chonDoAnBtn">
+                                    <a style="display: block; color: white; padding: 10px 0px;" href="#">
+                                        Chọn đồ ăn (2/4)
+                                    </a>
+                                </button>
                                 <div class="backPage">
                                     <a href="#">← Trở lại</a>
                                 </div>
@@ -115,6 +122,9 @@
                                         </tr>  
                                     </tbody> 
                                 </table>
+                                <div class="listSeat">
+                                    
+                                </div>
                             </div>
                         </div>
                       </div>
@@ -123,20 +133,82 @@
             </div>
         </div>
         <footer class="footer">
-
         </footer>
     </div>
 </body>
 </html>
 
 <script>
-    let alphabet = ['A','B','C','D','E','F','G','H','I','J'];
-    let tbodySeatLists = document.querySelector('.seatList');
-    let htmlSeatList = ``;
-    let arraySeatList = [];
-    alphabet.forEach((ele)=>{
-        for(let i = 0;i <= 21;i++){
-
+    let slGhe = 1;
+    let filmChose = JSON.parse(localStorage.getItem('filmChose'));
+    $('.numberPrice').text(`${filmChose.price} VND`)
+    $('.nameFilmCartTilte').text(`${filmChose.filmName} `)
+    function chondoAn(event){
+        if($('.seat-checked').length == 0){
+            alert("chua co ghe ngoi duoc chon");
+        }else{
+            let chairArr = [];
+            $('.seat-checked').each(function(){
+                const chairName = $(this).attr('id');
+                chairArr.push(chairName);
+            });
+            filmChose = {
+                ...filmChose,
+                chairArr,
+                price: filmChose.price * slGhe,
+                slGhe,
+            }
+            localStorage.setItem('filmChose', JSON.stringify(filmChose));
+            window.location.href = './bookTicketStep3.html'
         }
+    }
+    $(document).ready(function(){
+        let checkSeat = function(ele){
+            const alphas = ['D','E','F','G','H','I'];
+            if(alphas.includes(ele)){
+                return true;
+            }
+            return false;
+        }
+        let alphabet = ['A','B','C','D','E','F','G','H','I'];
+        let htmlSeats = alphabet.map((ele,index)=>{
+            return `
+            <div class="row">
+                <span class="alpha">${ele}</span>
+                <span id="seat-${ele}-1" class="seat  ${ele == 'I' ? 'I' : ""} ${checkSeat(ele) ? '' : ''}"></span>
+                <span id="seat-${ele}-2" class="seat  seat-sold ${ele == 'I' ? 'I' : ""} ${checkSeat(ele) ? '' : ''}"></span>
+                <span id="seat-${ele}-3" class="seat  ${ele == 'I' ? 'I' : ""} ${checkSeat(ele) ? '' : ''}"></span>
+                <span id="seat-${ele}-4" class="seat  ${ele == 'I' ? 'I' : ""} ${checkSeat(ele) ? 'pair-seat' : ''}"></span>
+                <span id="seat-${ele}-5" class="seat  ${ele == 'I' ? 'I' : ""} ${checkSeat(ele) ? 'pair-seat' : ''}"></span>
+                <span id="seat-${ele}-6" class="seat  ${ele == 'I' ? 'I' : ""} ${checkSeat(ele) ? 'pair-seat' : ''}"></span>
+                <span id="seat-${ele}-7" class="seat  ${ele == 'I' ? 'I' : ""} ${checkSeat(ele) ? 'pair-seat' : ''}"></span>
+                <span id="seat-${ele}-8" class="seat  ${ele == 'I' ? 'I' : ""} ${checkSeat(ele) ? 'pair-seat' : ''}"></span>
+                <span id="seat-${ele}-9" class="seat  ${ele == 'I' ? 'I' : ""} ${checkSeat(ele) ? 'pair-seat' : ''}"></span>
+                <span id="seat-${ele}-10" class="seat  ${ele == 'I' ? 'I' : ""} ${checkSeat(ele) ? 'pair-seat' : ''}"></span>
+                <span id="seat-${ele}-11" class="seat  ${ele == 'I' ? 'I' : ""} ${checkSeat(ele) ? 'pair-seat' : ''}"></span>
+                <span id="seat-${ele}-12" class="seat  ${ele == 'I' ? 'I' : ""} ${checkSeat(ele) ? 'pair-seat' : ''}"></span>
+                <span id="seat-${ele}-13" class="seat  ${ele == 'I' ? 'I' : ""} ${checkSeat(ele) ? '' : ''}"></span>
+                <span id="seat-${ele}-14" class="seat  ${ele == 'I' ? 'I' : ""} ${checkSeat(ele) ? '' : ''}"></span>
+                <span id="seat-${ele}-15" class="seat  ${ele == 'I' ? 'I' : ""} ${checkSeat(ele) ? '' : ''}"></span>
+                <span class="alpha">${ele}</span>
+            </div>
+            `
+        }).join("");
+        $('.listSeat').append(htmlSeats.toString());
+        $('.seat').click(function(){
+            // console.log(1);
+            const checkClass = $(this).hasClass('seat-checked'); 
+            if(checkClass){
+                $(this).removeClass('seat-checked');
+            }else{
+                $(this).addClass('seat-checked');
+            }
+            slGhe = Number($('.seat-checked').length);
+            $('.numberPrice').text(`${filmChose.price * slGhe} VND`)
+            $('.quantity').text(`${slGhe}`)
+        })
+
     })
+
+
 </script>

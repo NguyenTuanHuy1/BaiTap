@@ -4,70 +4,131 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Ticket</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+    </script>
+    <script> 
+        $(function(){
+          $("#header").load("./header.html"); 
+          window.addEventListener("load", (event) => {
+            $('.step4').addClass('current');
+        });
+        });
+    </script> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./access/css/bookTicket.css">
 </head>
 <body>
     <div class="page">
-        <header class="header">
-            <div class="wrapper-header-content">
-                <div class="header-content">
-                    <!-- left  -->
-                    <div class="header-left-elements">
-                        <div class="header-logo">
-                            <img src="./access/image/logomain.png" alt="">
-                        </div>
-                        <div class="header-step-by-step">
-                            <div class="header-order-steps">
-                                <div class="header-wrapper-step">
-                                    <div class="step current" data-step="1">
-                                        <a href="#/">01</a>
+        <header id="header">
+        </header>
+        <div class="container__wrapper">
+            <h4 class="containerTiltle">Bước 4: Nhập thông tin/Thanh toán</h4>
+            <div class="containerStepContent">
+                <div class="container">
+                    <div class="row">
+                      <div class="col-xxl-4 col-xl-4 col-lg-4">
+                        <div class="contentLeft">
+                            <div class="filmCart">
+                                <div class="addressFilmCart">
+                                    <h4 class="addressFilmCartTitle">BHD Star Le Van Viet</h4>
+                                    <span class="screen">Screen 6</span> - 24/2/2024 - Suất chiếu: 17h20
+                                </div>
+                                <div class="nameFilmCart">
+                                    <h3 class="nameFilmCartTilte">Mai</h3>
+                                    <div class="meta">
+                                        <span class="age-limit T18">T18</span>
+                                        <span class="type">Phụ đề</span>
+                                        <span class="format">2D</span>
                                     </div>
-                                    <div class="step" data-step="2">
-                                        <a href="#/">02</a>
-                                    </div>
-                                    <div class="step" data-step="3">
-                                        <a href="#/">03</a>
-                                    </div>
-                                    <div class="step" data-step="4">
-                                        <a href="#/">04</a>
-                                    </div>
+                                </div>
+                                <table class="cart-items"><tbody><tr><td class="title"><span class="quantity">1</span>&nbsp;<span>x</span>&nbsp;<span class="name">Adult-Stand-2D</span><br><span class="description">B17</span></td><td class="price">100.000&nbsp;VND</td></tr></tbody></table>
+                                <div class="sumMoney">
+                                    <span class="text">
+                                        Tổng tiền
+                                    </span>
+                                    <span class="numberPrice">
+                                        100.000 VND
+                                    </span>
+                                </div>
+                                <button class="chonDoAnBtn">Check out</button>
+                                <div class="backPage">
+                                    <a href="#">← Trở lại</a>
+                                </div>
+                                <div class="timelife">
+                                    <span class="timelifeNumber">Còn lại 5 phút, 55 giây</span>
                                 </div>
                             </div>
                         </div>
-                    </div>
-
-                    <!-- right -->
-                    <div class="header-right-elements">
-                        <ul class="header-menu">
-                            <li class="item">
-                                <a href="#">Quy dinh</a>
-                            </li>
-                            <li class="item">
-                                <a href="#">FAQ</a>
-                            </li>
-                            <li class="item">
-                                <a href="#">Thanh pho HCM</a>
-                            </li>
-                            <li class="item">
-                                <a href="#">
-                                    Tai khoan
-                                </a>
-                                /
-                                <a href="#">
-                                    Thoat
-                                </a>
-                            </li>
-                        </ul>
+                      </div>
+                      <div class="col-xxl-8 col-xl-8 col-lg-8">
+                        <div class="contentRight">
+                            <h4 class="title-step4">Mã giảm giá</h4>
+                            <div class="wrap-inp">
+                                <input class="discount" type="text" placeholder="Nhập mã giảm giá tại đây">
+                                <button class="btnApdung">Áp dụng</button>
+                            </div>
+                        </div>
+                        <div class="contentRight">
+                            <h4 class="title-step4">Hình thức thanh toán</h4>
+                            <ul class="menu-payment">
+                                <li class="item">
+                                    <input name="payment" value="shoppee" id="shopeepay" type="radio" required checked>
+                                    <img src="./access/image/shopeepay.png" alt="spp">
+                                    <label for="shopeepay">Thanh toán qua SHOPEEPAY</label>
+                                </li>
+                                <li class="item">
+                                    <input name="payment" value="vnpay" id="vnpay" type="radio" required>
+                                    <img src="./access/image/vnpay.png" alt="vnp">
+                                    <label for="shopeepay">Thanh toán qua VNPAY (Visa, Master, Amex, JCB,...)</label>
+                                </li>
+                            </ul>
+                        </div>
+                      </div>
                     </div>
                 </div>
             </div>
-        </header>
-        <div class="container">
-
         </div>
         <footer class="footer">
-
         </footer>
     </div>
 </body>
 </html>
+<script>
+    let filmChose = JSON.parse(localStorage.getItem('filmChose'));
+    $('.quantity').text(`${filmChose.slGhe}`);
+    $('.numberPrice').text(`${filmChose.price} VND`)
+    $('.chonDoAnBtn').click(function(){
+        const discount = $('.discount').val();
+        const paymentMethod = $('input[name="payment"]:checked').val();
+        filmChose = {
+            ...filmChose,
+            discount,
+            paymentMethod
+        }
+        localStorage.setItem('filmChose', JSON.stringify(filmChose));
+        console.log(filmChose);
+        var userInfo = JSON.parse(localStorage.getItem("nguoiDungHienTai"));
+        if (!userInfo.hasOwnProperty('danhSachFilm')) {
+            userInfo.danhSachFilm = [];
+        }
+        userInfo.danhSachFilm.push(filmChose);
+        localStorage.setItem('nguoiDungHienTai', JSON.stringify(userInfo));
+        var danhSachTaiKhoan = JSON.parse(localStorage.getItem('danhSachTaiKhoan')) || [];
+        for (var i = 0; i < danhSachTaiKhoan.length; i++) {
+            if(danhSachTaiKhoan[i].email===userInfo.email){
+                if (!danhSachTaiKhoan[i].hasOwnProperty('danhSachFilm')) {
+                    danhSachTaiKhoan[i].danhSachFilm = [];
+                }
+                danhSachTaiKhoan[i].danhSachFilm.push(filmChose);
+
+            }
+        }
+        localStorage.setItem('danhSachTaiKhoan', JSON.stringify(danhSachTaiKhoan));
+        window.location.href = './trangchu_dn.html';
+    })
+</script>
+

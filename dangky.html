@@ -12,15 +12,15 @@
 <body>
     <div class="container-fluid">
         <div class="row" style="margin-top: 200px;">
-            <nav class="navbar navbar-expand-md border-bottom border-3 fixed-top bg-dark">
+            <nav class="navbar navbar-expand-sm border-bottom border-3 fixed-top bg-dark">
                 <div class="container-fluid">
-                    <a href="" class="navbar-brand mx-auto" ><img src="./access/img/logo.png" alt="" class="" style="width: 100px;"></a>
+                    <a href="./index.html" class="navbar-brand mx-auto" ><img src="./access/img/logo.png" alt="" class="" style="width: 100px;"></a>
                     <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#n1">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse " id="n1">
                         <ul class="navbar-nav ms-auto">
-                            <li class="nav-item"><a href="" class="nav-link">Quy định</a></li>
+                            <li class="nav-item"><a href="" class="nav-link" data-bs-toggle="modal" data-bs-target="#quydinh">Quy định</a></li>
                             <li class="nav-item"><a href="" class="nav-link">FAQ</a></li>
                             <li class="nav-item me-2 mb-2">
                                 <select name="" id="" class="form-select">
@@ -82,6 +82,7 @@
                     <div class="col-lg-6 p-4">
                         <label for="mk" class="form-lable mb-3">Mật khẩu</label><span id="errMk">*</span>
                         <input type="password" name="mk" id="mk" class="form-control">
+                        <span id="goiy"></span>
                     </div>
                     <div class="col-lg-6 p-4">
                         <label for="nmk" class="form-lable mb-3">Nhập lại mật khẩu</label><span id="errNmk">*</span>
@@ -128,7 +129,7 @@
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="" id="c1">
                             <label class="form-check-label" for="c1">
-                                Tôi đã đọc, hiểu và đồng ý với các <p><a href="" class="link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover ms-auto">Điều khoản</a></p>
+                                Tôi đã đọc, hiểu và đồng ý với các <p><a href="#" class="link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover ms-auto" data-bs-toggle="modal" data-bs-target="#quydinh">Điều khoản</a></p>
                             </label>
                         </div>
                         <div class="form-check">
@@ -154,13 +155,13 @@
                     <img src="./access/img/vien.PNG" alt="" class="w-25">
                 </div>
                 <div class="row mt-4">
-                    <a href="">Hệ thống rạp</a>
+                    <a href="./hethongrap.html">Hệ thống rạp</a>
                 </div>
                 <div class="row mt-4">
-                    <a href="">Cụm rạp</a>
+                    <a href="./hethongrap.html">Cụm rạp</a>
                 </div>
                 <div class="row mt-4" >
-                    <a href="">Liên hệ</a>
+                    <a href="./index.html">Liên hệ</a>
                 </div>
                 <div class="row mt-4">
                     <img src="./access/img/logo_system.png" alt="" class="w-50">
@@ -174,19 +175,19 @@
                         <img src="./access/img/vien.PNG" alt="" class="w-25">
                     </div>
                     <div class="row mt-4">
-                        <a href="">Quy định thành viên</a>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#quydinh">Quy định thành viên</a>
                     </div>
                     <div class="row mt-4">
-                        <a href="">Điều khoản</a>
+                        <a href="./index.html">Điều khoản</a>
                     </div>
                     <div class="row mt-4" >
-                        <a href="">Hướng dẫn đặt vé online</a>
+                        <a href="./index.html">Hướng dẫn đặt vé online</a>
                     </div>
                     <div class="row mt-4" >
-                        <a href="">Quy định và chính sách chung</a>
+                        <a href="./index.html">Quy định và chính sách chung</a>
                     </div>
                     <div class="row mt-4" >
-                        <a href="">Chính sách bảo vệ thông tin cá nhân của người dùng</a>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#dieukhoan">Chính sách bảo vệ thông tin cá nhân của người dùng</a>
                     </div>
                 </div>
             <div class="col-lg-4 p-5">
@@ -215,6 +216,132 @@
                 <p>COPYRIGHT 2010 BHD STAR. ALL RIGHTS RESERVED</p>
             </div>
             
+        </div>
+    </div>
+    <div class="row">
+        <div class="modal" id="quydinh">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Quy định thành viên</h4>
+                        <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            1.CÁCH THỨC ĐĂNG KÝ TÀI KHOẢN <br><br>
+
+                            - Khách hàng có thể đăng ký tài khoản thành viên miễn phí tại www.bhdstar.vn/dang-ky hoặc trên ứng dụng di động BHD Star (iOS hoặc Android)
+                            <br><br>
+                            - Vui lòng kiểm tra và đảm bảo thông tin cá nhân chính xác trước khi hoàn tất đăng ký tài khoản. Tất cả thông tin ngoại trừ mật khẩu sẽ không thể chỉnh sửa sau khi đăng ký. <br>
+                            - Nếu có nhu cầu điều chỉnh thông tin cá nhân, quý khách vui lòng gửi email bằng địa chỉ đã đăng ký thành viên đến cskh@bhdstar.vn để được hỗ trợ.<br>
+                            - Tài khoản thành viên có thể sử dụng ngay sau khi đăng ký. <br>
+                            2.QUY ĐỊNH VÀ QUYỀN LỢI VỀ CẤP BẬC THÀNH VIÊN <br><br>
+
+                            - BHD Star xếp hạng thành viên dựa trên số lần mua vé (sau đây gọi là Visit) trong vòng 01 năm kể từ ngày đăng ký tài khoản<br>
+                            - Cấp bậc thành viên được duy trì trong vòng 12 tháng tính từ ngày cập nhật cấp bậc.<br>
+                            - BHD Star sẽ xét lại cấp bậc thành viên sau 12 tháng dựa trên số Visit tích lũy được trong 12 tháng trước đó.<br>
+
+
+                            3.QUY ĐỊNH VỀ ĐIỂM THƯỞNG<br><br>
+
+                            - Với mỗi giao dịch phát sinh có dùng tài khoản thành viên bao gồm giao dịch mua vé hoặc mua bắp, nước… (trực tiếp tại rạp hoặc giao dịch online), khách hàng thành viên sẽ được tích luỹ được điểm thưởng (RP).<br>
+
+                            3.1 Cách thức tích lũy RP<br><br>
+
+
+
+                            Ví dụ: Với giao dịch 100,000VNĐ bạn sẽ tích lũy được:<br><br>
+
+                            - Hạng Star: 10 RP<br>
+                            - Hạng Gold: 12.5 RP<br>
+                            - Hạng Diamond: 15 RP<br>
+                            3.2  Quà tặng có thể đổi được từ RP<br>
+
+
+
+                            3.3  Quy định chung<br><br>
+
+                            - Điểm thưởng sẽ không thể quy đổi thành tiền mặt hoặc chuyển nhượng sang cho tài khoản khác.<br>
+                            - Quà thưởng sau khi đã đổi sẽ không thể đổi hoặc trả.<br>
+                            - Khách hàng thành viên chỉ có thể đổi quà thưởng và hưởng ưu đãi khi xuất trình tài khoản.<br>
+                            4.   QUY ĐỊNH VỀ QUÀ TẶNG SINH NHẬT<br>
+                            4.1 Cách thức nhận quà<br><br>
+
+                            - Thời gian nhận quà sinh nhật dành cho khách hàng Gold và Diamond: trong tháng sinh nhật.<br>
+                            - Khách hàng Gold và Diamond cần xuất trình tài khoản thành viên và giấy tờ tùy thân để nhận quà trực tiếp tại rạp. Quà tặng không thể chuyển nhượng hoặc nhận quà thay.<br>
+                            - Quà tặng sinh nhật chỉ có giá trị sử dụng trong ngày khách hàng đến nhận quà tặng.<br>
+                            - Chỉ áp dụng xuất vé và combo trực tiếp, không thể xuất voucher thay thế để sử dụng lần sau.<br>
+                            4.2  Quy định về vé tặng sinh nhật<br><br>
+
+                            - Áp dụng cho suất chiếu 2D (hoặc 3D) tùy thuộc vào hạng thành viên.<br>
+                            - Áp dụng cho vé đơn 2D (Standard hoặc VIP), không áp dụng cho ghế đôi, ghế sofa.<br>
+                            - Không áp dụng quy đổi vé của các suất chiếu đặc biệt, suất chiếu sớm và Lễ/ Tết.<br>
+                            - Không áp dụng quy đổi vé của các suất chiếu phòng chiếu Onyx, Deluxe hoặc First Class.<br>
+                            5.   LƯU Ý KHÁC<br><br>
+
+                            - Khách hàng thành viên phải xuất trình tài khoản thành viên trước khi thanh toán tại quầy vé và đồ ăn thức uống để được tích điểm.<br>
+                            - Khi mua vé online trên website hoặc ứng dụng di động BHD Star, vui lòng đăng nhập thành viên trước khi chọn phim hoặc suất chiếu để được tích điểm.<br>
+                            - BHD Star Cineplex có quyền thay đổi bất kỳ điều khoản nào và sẽ có thông báo chi tiết trên website, tại rạp và email cá nhân cho khách hàng trước ngày chính thức áp dụng thay đổi.<br>
+                            - Mọi thắc mắc liên quan đến tài khoản thành viên, khách hàng vui lòng liên hệ hotline 1900 2099 hoặc email cskh@bhdstar.vn để được hỗ trợ.<br>
+                        </p>
+                    </div>
+                    <div class="modal-footer"></div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="dieukhoan">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Chính sách bảo mật</h4>
+                        <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            <h3>Chúng tôi là ai</h3> <br>
+                            Văn bản được đề xuất: Địa chỉ website là: https://demo.bhdstar.vn. <br>
+
+                            <h3>Bình luận</h3><br>
+                            Văn bản được đề xuất: Khi khách truy cập để lại bình luận trên trang web, chúng tôi thu thập dữ liệu được hiển thị trong biểu mẫu bình luận và cũng là địa chỉ IP của người truy cập và chuỗi user agent của người dùng trình duyệt để giúp phát hiện spam
+                            <br>
+                            Một chuỗi ẩn danh được tạo từ địa chỉ email của bạn (còn được gọi là hash) có thể được cung cấp cho dịch vụ Gravatar để xem bạn có đang sử dụng nó hay không. Chính sách bảo mật của dịch vụ Gravatar có tại đây: https://automattic.com/privacy/. Sau khi chấp nhận bình luận của bạn, ảnh tiểu sử của bạn được hiển thị công khai trong ngữ cảnh bình luận của bạn.
+                            <br>
+                            <h3>Media</h3><br>
+                            Văn bản được đề xuất: Nếu bạn tải hình ảnh lên trang web, bạn nên tránh tải lên hình ảnh có dữ liệu vị trí được nhúng (EXIF GPS) đi kèm. Khách truy cập vào trang web có thể tải xuống và giải nén bất kỳ dữ liệu vị trí nào từ hình ảnh trên trang web.
+                            <br>
+                            <h3>Cookies</h3><br>
+                            Văn bản được đề xuất: Nếu bạn viết bình luận trong website, bạn có thể cung cấp cần nhập tên, email địa chỉ website trong cookie. Các thông tin này nhằm giúp bạn không cần nhập thông tin nhiều lần khi viết bình luận khác. Cookie này sẽ được lưu giữ trong một năm.
+                            <br>
+                            Nếu bạn vào trang đăng nhập, chúng tôi sẽ thiết lập một cookie tạm thời để xác định nếu trình duyệt cho phép sử dụng cookie. Cookie này không bao gồm thông tin cá nhân và sẽ được gỡ bỏ khi bạn đóng trình duyệt.
+                            <br>
+                            Khi bạn đăng nhập, chúng tôi sẽ thiết lập một vài cookie để lưu thông tin đăng nhập và lựa chọn hiển thị. Thông tin đăng nhập gần nhất lưu trong hai ngày, và lựa chọn hiển thị gần nhất lưu trong một năm. Nếu bạn chọn "Nhớ tôi", thông tin đăng nhập sẽ được lưu trong hai tuần. Nếu bạn thoát tài khoản, thông tin cookie đăng nhập sẽ bị xoá.
+                            <br>
+                            Nếu bạn sửa hoặc công bố bài viết, một bản cookie bổ sung sẽ được lưu trong trình duyệt. Cookie này không chứa thông tin cá nhân và chỉ đơn giản bao gồm ID của bài viết bạn đã sửa. Nó tự động hết hạn sau 1 ngày.
+                            <br>
+                            <h3>Nội dung nhúng từ website khác</h3><br>
+                            
+                            Văn bản được đề xuất: Các bài viết trên trang web này có thể bao gồm nội dung được nhúng (ví dụ: video, hình ảnh, bài viết, v.v.). Nội dung được nhúng từ các trang web khác hoạt động theo cùng một cách chính xác như khi khách truy cập đã truy cập trang web khác.
+                            <br>
+                            Những website này có thể thu thập dữ liệu về bạn, sử dụng cookie, nhúng các trình theo dõi của bên thứ ba và giám sát tương tác của bạn với nội dung được nhúng đó, bao gồm theo dõi tương tác của bạn với nội dung được nhúng nếu bạn có tài khoản và đã đăng nhập vào trang web đó.
+                            <br>
+                            <h3>Chúng tôi chia sẻ dữ liệu của bạn với ai</h3><br>
+                            Văn bản được đề xuất: If you request a password reset, your IP address will be included in the reset email.
+                            <br>
+                            <h3>Dữ liệu của bạn tồn tại bao lâu</h3><br>
+                            Văn bản được đề xuất: Nếu bạn để lại bình luận, bình luận và siêu dữ liệu của nó sẽ được giữ lại vô thời hạn. Điều này là để chúng tôi có thể tự động nhận ra và chấp nhận bất kỳ bình luận nào thay vì giữ chúng trong khu vực đợi kiểm duyệt.
+                            <br>
+                            Đối với người dùng đăng ký trên trang web của chúng tôi (nếu có), chúng tôi cũng lưu trữ thông tin cá nhân mà họ cung cấp trong hồ sơ người dùng của họ. Tất cả người dùng có thể xem, chỉnh sửa hoặc xóa thông tin cá nhân của họ bất kỳ lúc nào (ngoại trừ họ không thể thay đổi tên người dùng của họ). Quản trị viên trang web cũng có thể xem và chỉnh sửa thông tin đó.
+                            <h3>Các quyền nào của bạn với dữ liệu của mình</h3><br>
+                            
+                            Văn bản được đề xuất: Nếu bạn có tài khoản trên trang web này hoặc đã để lại nhận xét, bạn có thể yêu cầu nhận tệp xuất dữ liệu cá nhân mà chúng tôi lưu giữ về bạn, bao gồm mọi dữ liệu bạn đã cung cấp cho chúng tôi. Bạn cũng có thể yêu cầu chúng tôi xóa mọi dữ liệu cá nhân mà chúng tôi lưu giữ về bạn. Điều này không bao gồm bất kỳ dữ liệu nào chúng tôi có nghĩa vụ giữ cho các mục đích hành chính, pháp lý hoặc bảo mật.
+                            <br>
+                            <h3>Dữ liệu của bạn được gửi đến đâu</h3><br>
+                            Văn bản được đề xuất: Các bình luận của khách (không phải là thành viên) có thể được kiểm tra thông qua dịch vụ tự động phát hiện spam.
+                        </p>
+                    </div>
+                    <div class="modal-footer"></div>
+                </div>
+            </div>
         </div>
     </div>
     <script>
@@ -309,6 +436,13 @@
                     return false;
                 }
                 else{
+                    var danhSachTaiKhoan = JSON.parse(localStorage.getItem('danhSachTaiKhoan')) || [];
+                    for (var i = 0; i < danhSachTaiKhoan.length; i++) {
+                        if (danhSachTaiKhoan[i].tendn === chuoiTenDN) {
+                            $("#errTenDN").html(" (Lỗi: Tên đăng nhập đã tồn tại)").css("color", "red");
+                            return false;
+                        }
+                    }
                     $("#errTenDN").html("*").css("color","");
                     return true;
                 }
@@ -336,6 +470,13 @@
                     return false;
                 }
                 else{
+                    var danhSachTaiKhoan = JSON.parse(localStorage.getItem('danhSachTaiKhoan')) || [];
+                    for (var i = 0; i < danhSachTaiKhoan.length; i++) {
+                        if (danhSachTaiKhoan[i].email === chuoiMail) {
+                            $("#errMail").html(" (Lỗi: Email đã tồn tại)").css("color", "red");
+                            return false;
+                        }
+                    }
                     $("#errMail").html("*").css("color","");
                     return true;
                 }
@@ -346,19 +487,29 @@
             function ktMatkhau(){
                 var chuoiMk=$("#mk").val();
                 var rong=/^\s*$/;
-                var mauMk=/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{3,}$/;
+                var mauMk=/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{12,}$/;
+                var mauMk1=/^\d+$/;
+                var mauMk2=/^[a-zA-Z]+$/;
                 var kq=mauMk.test(chuoiMk);
                 if(rong.test(chuoiMk)){
                     $("#errMk").html(" (Lỗi: Mật khẩu không được rỗng)").css("color","red");
+                    $("#goiy").html("");
                     return false;
                 }
-                //Tối thiểu ba ký tự, ít nhất một chữ cái viết hoa, một chữ cái viết thường, một số và một ký tự đặc biệt:
-                else if(!kq){
-                    $("#errMk").html(" (Lỗi: Mật khẩu nhập không chính xác)").css("color","red");
+                else if(mauMk1.test(chuoiMk)||mauMk2.test(chuoiMk)){
+                    $("#errMk").html(" (Lỗi: Mật khẩu rất yếu - vui lòng nhập mật khẩu khó hơn)").css("color","red");
+                    $("#goiy").html(" Gợi ý: Tối thiểu 12 ký tự, ít nhất một chữ cái viết hoa, một chữ cái viết thường, một số và một ký tự đặc biệt");
+                    return false;
+                }
+                //Tối thiểu 12 ký tự, ít nhất một chữ cái viết hoa, một chữ cái viết thường, một số và một ký tự đặc biệt:
+                else if(!mauMk.test(chuoiMk)){
+                    $("#errMk").html(" (Lỗi: Mật khẩu yếu)").css("color","red");
+                    $("#goiy").html(" Gợi ý: Tối thiểu 12 ký tự, ít nhất một chữ cái viết hoa, một chữ cái viết thường, một số và một ký tự đặc biệt");
                     return false;
                 }
                 else{
                     $("#errMk").html("*").css("color","");
+                    $("#goiy").html("");
                     return true;
                 }
             }
@@ -465,12 +616,14 @@
                     var thang = $("#thang").val();
                     var nam = $("#nam").val();
                     var tinhthanhpho = $("#tp").val();
+                    var tendn=$("#tendn").val();
                     var danhSachTaiKhoan = JSON.parse(localStorage.getItem("danhSachTaiKhoan")) || [];
                     var thongTinUser = {
                         ho: ho,
                         ten: ten,
                         gioitinh: gioitinh,
                         email: email,
+                        tendn:tendn,
                         matkhau: matkhau,
                         dienthoai: dienthoai,
                         ngay: ngay,
@@ -483,7 +636,6 @@
                     window.location.href = "./dangnhap.html";
                     return true;
                 }
-                
             })
         })
     </script>

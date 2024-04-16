@@ -1,4 +1,16 @@
-  
+
+   $(document).ready(function(){
+    $('.carousel-slick').slick({
+        autoplay: true,
+        autoplaySpeed: 2000, 
+        speed: 300,
+        infinite: true, 
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow: '<button type="button" class="slick-prev" style="text:black">Previous</button>',
+        nextArrow: '<button type="button" class="slick-next">Next</button>'
+    });
+});
 $('.sale').slick({
   dots: true,
   infinite: true,
@@ -25,16 +37,13 @@ $('.sale').slick({
       }
     },
     {
-      breakpoint: 600,
+      breakpoint: 700,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
         
       }
     }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
   ]
 });
 $('.reponsive').slick({
@@ -72,9 +81,9 @@ $('.reponsive').slick({
       }
     },
     {
-      breakpoint: 480,
+      breakpoint: 560,
       settings: {
-        slidesToShow: 1,
+        slidesToShow: 2,
         slidesToScroll: 1,
       }
     }
