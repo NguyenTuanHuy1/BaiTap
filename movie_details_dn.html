@@ -121,7 +121,7 @@
                                     </div>
                                     <div class="buttons-movie">
                                         <div class="button-buy">
-                                            <a href="" class="buttons-buy-detail">
+                                            <a href="./bookTicketStep1.html" class="buttons-buy-detail">
                                                 <i class="fa-solid fa-ticket" style="font-size: 20px; margin-right: 6px;"></i>
                                                 Mua vé ngay
                                             </a>
@@ -304,6 +304,9 @@
                     $(".ngonNgu").text(films[index].ngonNgu);
                     $(".imgFilm").attr("src", films[index].image);
                     $(".videoFilm").attr("src", films[index].video);
+                    const buyButton = $(".buttons-buy-detail");
+                    const href = buyButton.attr("href");
+                    buyButton.attr("href", href + "#" + index);
                 });
             } else {
                 console.log("Số chỉ mục không hợp lệ hoặc không có dữ liệu phim.");
