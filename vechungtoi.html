@@ -355,6 +355,7 @@
     <script src="./JS/ListFilm.js"></script>
     <script>
         $(document).ready(function(){
+            var infoKV=localStorage.getItem("selectedRegion");
             if(infoKV){
                 $("select[name=khuvuc]").val(infoKV);
             }

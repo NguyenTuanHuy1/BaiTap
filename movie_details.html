@@ -270,7 +270,32 @@
                 console.log("Số chỉ mục không hợp lệ hoặc không có dữ liệu phim.");
             }
         });
-    
+        $(document).ready(function(){
+            var infoKV=localStorage.getItem("selectedRegion");
+            if(infoKV){
+                $("select[name=khuvuc]").val(infoKV);
+            }
+            else{
+                $("#chonkv").modal("show");
+            }
+            $(".region-btn").click(function(){
+                var selectedRegion = $(this).val();
+                localStorage.setItem("selectedRegion",selectedRegion);
+                $("select[name=khuvuc]").val(selectedRegion);
+                $("#chonkv").modal("hide");
+            });
+            $("select[name=khuvuc]").change(function() {
+                var selectedRegion = $(this).val();
+                localStorage.setItem("selectedRegion", selectedRegion);
+            });
+            $(window).scroll(function(){
+                if ($(this).scrollTop()){
+                    $(".header-container").addClass('sticky');
+                }else{
+                    $(".header-container").removeClass('sticky');
+                }
+            })
+        })
     </script>
 </body>
 </html>
