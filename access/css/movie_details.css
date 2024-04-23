@@ -101,10 +101,18 @@
 
 
 /* Media query for smaller screens */
-@media screen and (max-width: 765px) {
-    .movie  img {
-        height: 500px; 
-        width: 400px;/* Set height for smaller screens */
+@media (max-width: 380px){
+    .movie img{
+        width: 250px;
+        height: 350px;
+        border-radius: 10px;
+    }
+    .container-first{
+        width: 250px;
+        margin-right: 20px;
+    }
+    .img-movie{
+        width: 250px;
     }
 }
 
